@@ -1,96 +1,66 @@
-# 🚀 Freelancer Hub - Elite Services & Engineering Portfolio Website
+# 📜 Verbum Atelier &mdash; Free Professional Classic Text Studio
 
-A premier, high-performance website built with pure **HTML5**, **CSS3**, and **Vanilla JavaScript (ES6+)**. Engineered with a professional front showcasing **interactive glowing text highlights**, a comprehensive **8-service technical directory**, and a **fully automated functional client-side engine**.
-
----
-
-## ✨ Key Features & Highlights
-
-### 1. 🌟 Front of Website & Interactive Text Highlighting
-- **Interactive Text Highlighting Toolbar**: Directly in the hero section, visitors can toggle between key engineering focus modes:
-  - `⚡ Speed & Performance` (highlights sub-100ms TTFB, 98+ PageSpeed, CDN caching)
-  - `🎨 UI/UX Excellence` (highlights modern aesthetics, Figma tokens, accessibility)
-  - `📈 Enterprise Scale` (highlights microservices, PostgreSQL, horizontal scaling)
-  - `🔒 Security & SLA` (highlights JWT, OWASP Top 10 hardening, DDoS protection)
-- **Glowing Neon Marker Effects**: High-contrast, vibrant text markers (`.marker-highlight`) with dynamic pulsation animations (`.active-glow`).
-- **Dynamic Feature Highlight Banner**: Automatically updates benchmark metrics and value statements as focus modes change.
-- **Dynamic Typing Headline**: Smooth rotating keyword typewriter animation.
-- **Ambient Cursor Spotlight**: Mouse-following radial flashlight effect illuminating typography and cards.
-- **Live SLA & Operational Clock**: Digital real-time clock displaying live UTC time and active response SLA.
-- **Synthesizer Sound Effects (Web Audio API)**: Zero-dependency audio feedback for tactile button clicks and success chimes, with sound mute/unmute control.
-
-### 2. 💼 Comprehensive Services Showcase (8 Core Technical Services)
-1. **Full-Stack Web Development** (Next.js, React, Node.js, TypeScript, PostgreSQL)
-2. **UI/UX & Product Design Systems** (Figma interactive prototypes, design tokens, WCAG)
-3. **Headless E-Commerce Architecture** (Shopify API, Stripe, 3D product visualizer)
-4. **Cross-Platform Mobile Apps** (React Native, Expo, offline SQLite sync, biometrics)
-5. **Speed & SEO Optimization Suite** (98+ Core Web Vitals, CDN edge routing, structured schema)
-6. **Cloud DevOps & CI/CD Infrastructure** (AWS, Docker, GitHub Actions, SSL & DDoS protection)
-7. **AI Agents & Intelligent Automation** (OpenAI/Gemini APIs, RAG vector search, automated bots)
-8. **Security Audits & Code Refactoring** (OWASP Top 10, penetration tests, technical debt cleanup)
-
-- **Real-Time Instant Search**: Live search input filters services instantly as the user types.
-- **Category Filter Pills**: Quick category filtering (*All*, *Development*, *UI/UX Design*, *E-Commerce*, *Mobile Apps*, *AI & Cloud*).
-- **Service Deliverables & Specs Modal**: Clicking "View Specs & Deliverables" opens a comprehensive dialog with complete checklists, SLA turnaround, pricing, and one-click booking.
-
-### 3. ⚙️ Fully Automated Functional Engine (Client-Side Interactivity)
-- **Automated Service Quote & Cost Calculator (`#calculator`)**:
-  - Live configurator: select service type, adjust scope range slider (1 to 25+ views), and toggle 6 feature add-ons.
-  - Choose delivery speed pacing (*Standard*, *Fast-Track*, *Express Sprint*).
-  - Automatically calculates real-time estimated investment ($), completion timeline (weeks/days), and itemized breakdown with multi-feature bundle discounts.
-  - **"Apply Quote to Booking Form"**: Automatically scrolls to the contact form, selects the service, sets the budget tier, and writes the complete quote summary into the inquiry message!
-  - **"Copy / Export Official Quote"**: Formats quotation into clean ASCII text and copies to clipboard with toast notification.
-- **Service Delivery Tiers Comparison Matrix**: Clean comparison table comparing *Starter MVP*, *Professional App*, and *Enterprise Retainer*.
-- **Automated Live AI Service Assistant Chatbot ("NexusBot")**:
-  - Floating bottom-right widget with unread notification badge.
-  - Quick-reply chips (`All Services`, `Quote Calculator`, `Turnaround Speed`, `IP & Warranty`, `Book Consultation`).
-  - Natural Language keyword processor that answers queries regarding tech stack, pricing, timelines, and guarantees.
-  - Simulated typing indicator, chime audio, and interactive action buttons inside bot replies.
-- **Booking Inquiry Confirmation & Digital Voucher Modal**:
-  - Full client-side form validation with inline feedback.
-  - Automatically generates unique Booking Reference Ticket IDs (e.g. `#FH-2026-8941`).
-  - Displays an interactive **Booking Confirmation Receipt Voucher Modal**.
-  - **"Download Voucher (TXT)"**: Exports a formal receipt file directly to the client's device.
-  - Pre-fills a direct WhatsApp chat link.
-- **Interactive FAQ Accordion with Live Search & Highlight**:
-  - Search box dynamically filters FAQ questions and answers, highlighting matched keywords.
-- **Testimonials Carousel & Verified Review Submission**:
-  - Auto-play carousel with pause on hover, arrows, and dot indicators.
-  - "+ Write a Verified Review" modal with interactive 5-star rating selector that appends new reviews directly to the active carousel!
-- **Dark / Light Theme Toggle**: Persistent theme switcher with automatic preference detection and `localStorage` storage.
-- **Floating Toast Notification System**: Rich popups for user feedback.
+A free, sovereign, and privacy-first text tools website engineered with a **classic editorial aesthetic**, real-time linguistic metrics, target word limit tracking, and instant document archival.
 
 ---
 
-## 📁 Project Structure
+## ✨ Features & Capabilities
 
+### 1. ✍️ Real-Time Precision Metrics Engine
+- **Live Word Count**: High-throughput Unicode-aware tokenization handling contractions, hyphenated compounds, and multilingual character sets.
+- **Character Count (With Spaces)**: Instant tracking of all glyphs, whitespace, and formatting carriage returns.
+- **Character Count (Without Spaces)**: Accurate count of alphanumeric characters and punctuation marks.
+- **Sentences & Paragraphs**: Intelligent boundary detection with period, question mark, exclamation mark, and newline normalization.
+- **Reading Time Estimation**: Dynamic pacing calculation based on standard silent reading cadence (220 words/minute).
+- **Speaking Time Cadence**: Essential for keynotes, lectures, podcast scripts, and speeches (130 words/minute).
+- **Flesch Reading Ease & Grade Level**: Algorithmic scoring of readability and cognitive accessibility from elementary to post-graduate difficulty.
+- **Average Word Length**: Lexical density metrics.
+
+### 2. 🎯 Dynamic Target Word Limit Monitor
+- Set any custom target limit (e.g. 250, 500, 1,000, 2,500 words).
+- **1-Click Presets**: Social (50w), Abstract (150w), Essay (500w), Article (1,000w), Longform (2,500w).
+- **Smooth Visual Progress Bar**: Changes from green (on track) to amber (approaching limit) to alert crimson (exceeded limit).
+- **Live Counter**: Displays exact remaining words or over-target counts.
+- **Audio Chime**: Optional synthesized harmonic tone when target milestone is achieved.
+
+### 3. 📋 Copy, Clear, and Safe Undo
+- **Copy to Clipboard**: One-click instant copy with checkmark visual feedback and toast confirmation. Keyboard shortcut: `Ctrl + Shift + C`.
+- **Clear Text with Undo**: Instant wipe of the workspace paired with a 6-second emergency "Undo Clear" toast so you never lose inspired thoughts by accident.
+- **Continuous Local Storage Draft Sync**: Text is automatically cached locally so you can refresh or restart your browser without losing progress.
+
+### 4. 📥 Multi-Format Document Archival
+- **Plain Text (.txt)**: Clean `.txt` export via native browser blob generation. Keyboard shortcut: `Ctrl + Shift + D`.
+- **Word Manuscript (.doc)**: Formatted Microsoft Word compatible document with typography styling and analytical metrics header table.
+- **Markdown (.md)**: Includes YAML frontmatter with timestamp, word count, character count, and generator tags.
+- **Print / PDF**: Direct printer stylesheet integration for exporting formatted PDF transcripts.
+
+### 5. 🏛️ Highlighting 8 Core Service Facilities
+1. **Client-Side Privacy Vault**: Zero server transmission; 100% in-browser processing, GDPR & HIPAA safe.
+2. **Linguistic Analytics Engine**: Sub-millisecond Unicode AST tokenizer.
+3. **Target Word Limit Monitor**: Dynamic milestone and editorial compliance regulator.
+4. **Multi-Format Document Archival**: Native blob export into TXT, DOC, MD, and PDF.
+5. **Readability & Lexical Grading**: Standardized Flesch Reading Ease formula and syllable heuristics.
+6. **Typographic & Case Transformations**: Chicago/AP Title Case, UPPERCASE, lowercase, sentence case, and whitespace compression.
+7. **Speaking & Reading Cadence Profiler**: Real-time auditory and visual pacing for broadcasters and public speakers.
+8. **Local Session Memory & Safe Undo**: In-browser draft preservation with fail-safe undo buffer.
+
+### 6. 🎨 Classic Editorial Design System
+- **Classic Typography**: Google Fonts *Playfair Display*, *Cinzel*, *Plus Jakarta Sans*, and *JetBrains Mono*.
+- **Classic Color Palette**: Antique Gold accents (`#b8860b` / `#d4af37`), deep Oxford Navy (`#0f172a`), warm ivory parchment (`#fcfbf7`), and midnight obsidian dark mode (`#0a0e17`).
+- **Tactile Keystroke Synthesizer**: Optional Web Audio API typewriter sound effects with instant mute/unmute control.
+
+---
+
+## 🚀 How to Run the Website
+
+Simply double click `index.html` or open it with any modern web browser (Google Chrome, Microsoft Edge, Mozilla Firefox, Safari).
+
+Alternatively, launch with any local HTTP server:
+```bash
+# Using Python
+python -m http.server 8000
+
+# Using Node.js npx
+npx serve .
 ```
-Downloads/
-├── index.html          # Semantic HTML5 markup, sections, modals & widgets
-├── css/
-│   └── style.css       # Complete CSS styles, design tokens, animations & responsive rules
-├── js/
-│   └── main.js         # Master JavaScript engine (Calculator, Chatbot, Modals, Audio, Search)
-└── README.md           # Documentation and guide
-```
-
----
-
-## 🌐 How to Run the Website
-
-### Option 1: Direct File Opening (Simplest - No Server Required)
-Double-click or open `index.html` in any modern web browser (**Google Chrome**, **Microsoft Edge**, **Brave**, **Firefox**, **Safari**).
-
-### Option 2: Using VS Code Live Server
-1. Open this folder in **VS Code**.
-2. Right-click on `index.html` and select **"Open with Live Server"**.
-
----
-
-## 🎨 How to Customize
-
-- **Brand Name & Lead Engineer**: Search for `FreelancerHub` or `Alex Morgan` in `index.html` and `js/main.js` and replace with your name.
-- **Contact Channels**: Update email (`hello@freelancerhub.dev`), phone number (`+1 (800) 555-0199`), and social links in `#contact`.
-- **Pricing & Calculator Rates**: Adjust base rates and add-on costs in `#calc-service` inside `index.html` and in `calculateQuote()` inside `js/main.js`.
-- **Services Database**: Edit or add deliverables to `servicesDatabase` inside `js/main.js`.
-- **Theme Colors**: Customize `:root` CSS variables in `css/style.css`.
+Then navigate to `http://localhost:8000` or open `index.html` directly in your browser.

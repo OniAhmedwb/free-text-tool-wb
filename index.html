@@ -1,835 +1,731 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Freelancer Hub | Elite Web Development & UI/UX Design Portfolio</title>
-  <meta name="description" content="Freelancer Hub - A premier portfolio showcasing high-performance web development, modern UI/UX design, and innovative software solutions.">
-  <meta name="keywords" content="Freelancer Hub, Web Developer Portfolio, UI/UX Designer, Frontend Developer, Full-Stack Developer">
+  <title>Verbum Atelier &mdash; Free Professional Text Tools & Editorial Suite</title>
+  <meta name="description" content="A free professional text tool providing instant word count, character count, target word limits, copy, clear, and multi-format document download with classic editorial design.">
+  <meta name="keywords" content="word count, character count, target word limit, text tools, free editor, copy text, download doc, reading time, editorial suite">
 
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%2232%22%20height=%2232%22><rect%20width=%2232%22%20height=%2232%22%20rx=%228%22%20fill=%22%236366f1%22/><text%20x=%2250%25%22%20y=%2255%25%22%20dominant-baseline=%22central%22%20text-anchor=%22middle%22%20fill=%22white%22%20font-family=%22sans-serif%22%20font-weight=%22bold%22%20font-size=%2218%22>FH</text></svg>">
+  <!-- Favicon / Crest Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b8860b'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
 
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Classic Google Fonts: Playfair Display, Cinzel, Plus Jakarta Sans, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ========================================================================
-       Header & Navigation Bar
-       ======================================================================== -->
-  <!-- Cursor Spotlight Effect Layer -->
-  <div class="cursor-spotlight" id="cursor-spotlight"></div>
+  <!-- Classical Engraved Top Ribbon -->
+  <aside class="top-notice-bar" aria-label="Facility Highlights Bar">
+    <div class="notice-brand-tag">
+      <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      <span>ESTD. 2026 &bull; EDITORIAL EXCELLENCE ARCHIVE</span>
+    </div>
+    <div class="notice-pills">
+      <span class="notice-pill">
+        <span class="notice-dot"></span>
+        100% Free Forever
+      </span>
+      <span class="notice-pill">
+        <span class="notice-dot"></span>
+        Zero Cloud Storage &bull; Private Sandbox
+      </span>
+      <span class="notice-pill">
+        <span class="notice-dot"></span>
+        Real-Time AST Tokenizer
+      </span>
+    </div>
+  </aside>
 
-  <!-- ========================================================================
-       Header & Navigation Bar
-       ======================================================================== -->
-  <header class="navbar">
-    <div class="container nav-container">
-      <!-- Brand Logo -->
-      <a href="#home" class="nav-brand">
-        <div class="brand-icon">
-          <i class="fas fa-cubes"></i>
+  <!-- Sticky Header & Classic Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#workbench" class="brand-wrapper" aria-label="Verbum Atelier Homepage">
+        <div class="brand-crest" aria-hidden="true">
+          <!-- Elegant Quill & Scroll Monogram SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+            <line x1="16" y1="8" x2="2" y2="22"></line>
+            <line x1="17.5" y1="15" x2="9" y2="15"></line>
+          </svg>
         </div>
-        <span>Freelancer<span class="brand-dot">Hub</span></span>
+        <div class="brand-meta">
+          <span class="brand-name">VERBUM <span>ATELIER</span></span>
+          <span class="brand-tagline">Classic Text &amp; Editorial Suite</span>
+        </div>
       </a>
 
-      <!-- Desktop & Mobile Navigation Links -->
-      <nav class="nav-menu" id="nav-menu">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#calculator" class="nav-link">Estimator</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#portfolio" class="nav-link">Portfolio</a>
-        <a href="#process" class="nav-link">Process</a>
-        <a href="#pricing" class="nav-link">Pricing</a>
-        <a href="#faq" class="nav-link">FAQ</a>
-        <a href="#testimonials" class="nav-link">Reviews</a>
-        <a href="#contact" class="nav-link">Contact</a>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#workbench" class="nav-link">Text Studio</a></li>
+          <li><a href="#facilities" class="nav-link">Service Facilities</a></li>
+          <li><a href="#guidelines" class="nav-link">Word Benchmarks</a></li>
+          <li><a href="#faq" class="nav-link">Documentation</a></li>
+        </ul>
       </nav>
 
-      <!-- Action Buttons (Theme Toggle + Audio Toggle + CTA) -->
-      <div class="nav-actions">
-        <button class="sound-toggle-btn" id="sound-toggle" aria-label="Toggle Sound Effects" title="Sound Effects: ON">
-          <i class="fas fa-volume-up"></i>
+      <div class="header-actions">
+        <!-- Keystroke Sound Toggle -->
+        <button id="soundToggleBtn" class="icon-btn" title="Toggle Tactile Keystroke Audio" aria-label="Toggle typewriter sound">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
         </button>
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
-          <i class="fas fa-moon"></i>
+
+        <!-- Parchment / Obsidian Theme Toggle -->
+        <button id="themeToggleBtn" class="icon-btn" title="Toggle Classic Parchment / Midnight Obsidian Theme" aria-label="Toggle color theme">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
         </button>
-        <a href="#contact" class="btn btn-primary nav-cta-btn">
-          <span>Hire Me</span>
-          <i class="fas fa-arrow-right"></i>
+
+        <a href="#workbench" class="btn-classic-primary">
+          Open Studio
         </a>
-        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </div>
     </div>
   </header>
 
-  <!-- ========================================================================
-       Hero Section
-       ======================================================================== -->
-  <section id="home" class="hero">
+  <!-- Hero Section with Classic Typography & Highlights -->
+  <section class="hero-section">
     <div class="container">
-      <div class="hero-grid">
-        <!-- Hero Left Content -->
-        <div class="hero-content">
-          <div class="hero-badge-container">
-            <span class="status-badge">
-              <span class="pulse-dot"></span>
-              Available for High-Impact Projects
-            </span>
-            <span class="live-clock-badge">
-              <i class="far fa-clock"></i>
-              <span id="live-clock">UTC 00:00:00</span>
-              <span class="clock-tag">Live SLA</span>
-            </span>
-          </div>
+      <div class="hero-ornament">
+        <span class="ornament-line"></span>
+        <span class="ornament-seal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg>
+          Sovereign In-Browser Text Utility
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg>
+        </span>
+        <span class="ornament-line"></span>
+      </div>
 
-          <h1 class="hero-title">
-            Transforming Ideas into <br>
-            <span class="gradient-text typed-text-wrapper">
-              <span class="typed-text"></span><span class="typing-cursor">|</span>
-            </span>
-            <br>
-            <span class="hero-subline">
-              Engineered with <span class="marker-highlight highlight-yellow" data-highlight-category="speed">Lightning Speed</span>, <span class="marker-highlight highlight-cyan" data-highlight-category="design">Pixel-Perfect UI</span> &amp; <span class="marker-highlight highlight-purple" data-highlight-category="scale">Infinite Scale</span>.
-            </span>
-          </h1>
+      <h1 class="hero-title">
+        The Free Professional Text Studio with <em>Classic Editorial Precision</em>
+      </h1>
 
-          <!-- Interactive Text Highlighter Toolbar -->
-          <div class="hero-highlighter-bar">
-            <div class="highlighter-label">
-              <i class="fas fa-highlighter"></i>
-              <span>Highlight Focus:</span>
-            </div>
-            <div class="highlighter-pills">
-              <button class="highlighter-pill active" data-highlight="all">
-                <span class="pill-dot" style="background: #fbbf24;"></span> All Highlights
-              </button>
-              <button class="highlighter-pill" data-highlight="speed">
-                <span class="pill-dot" style="background: #fbbf24;"></span> ⚡ Speed &amp; Performance
-              </button>
-              <button class="highlighter-pill" data-highlight="design">
-                <span class="pill-dot" style="background: #38bdf8;"></span> 🎨 UI/UX Excellence
-              </button>
-              <button class="highlighter-pill" data-highlight="scale">
-                <span class="pill-dot" style="background: #c084fc;"></span> 📈 Enterprise Scale
-              </button>
-              <button class="highlighter-pill" data-highlight="security">
-                <span class="pill-dot" style="background: #34d399;"></span> 🔒 Security &amp; SLA
-              </button>
-            </div>
-          </div>
+      <p class="hero-description">
+        Real-time word and character counting, dynamic target limits, instant clipboard copying, and multi-format document archival. Built with complete client-side privacy facilities and classic typography.
+      </p>
 
-          <!-- Dynamic Feature Highlight Banner -->
-          <div class="highlight-callout-banner" id="highlight-callout">
-            <div style="display: flex; align-items: center; gap: 0.65rem;">
-              <i class="fas fa-sparkles"></i>
-              <span class="callout-text">Highlighting all core pillars: Sub-second load times, bespoke interfaces, and rock-solid architecture.</span>
-            </div>
-            <span class="callout-metric">99.8% Client Satisfaction</span>
-          </div>
-
-          <p class="hero-description">
-            Welcome to <strong>Freelancer Hub</strong> — where <span class="marker-highlight highlight-cyan" data-highlight-category="design">modern aesthetics</span> meet <span class="marker-highlight highlight-yellow" data-highlight-category="speed">high-performance engineering</span>. We deliver <span class="marker-highlight highlight-purple" data-highlight-category="scale">custom web applications</span>, <span class="marker-highlight highlight-yellow" data-highlight-category="speed">sub-second load speeds</span>, and <span class="marker-highlight highlight-emerald" data-highlight-category="security">bank-grade reliability</span> tailored to scale your brand.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#services" class="btn btn-primary">
-              <span>Explore Services</span>
-              <i class="fas fa-arrow-right"></i>
-            </a>
-            <a href="#calculator" class="btn btn-secondary">
-              <span>Instant Quote Estimator</span>
-              <i class="fas fa-calculator"></i>
-            </a>
-          </div>
-
-          <!-- Tech Stack Mini Badges -->
-          <div class="hero-tech-stack">
-            <span class="tech-label">Core Stack:</span>
-            <div class="tech-icons">
-              <span class="tech-badge"><i class="fab fa-react" style="color: #61dafb;"></i> React / Next.js</span>
-              <span class="tech-badge"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript ES6+</span>
-              <span class="tech-badge"><i class="fab fa-node-js" style="color: #68a063;"></i> Node.js</span>
-              <span class="tech-badge"><i class="fab fa-figma" style="color: #f24e1e;"></i> Figma UI/UX</span>
-              <span class="tech-badge"><i class="fab fa-css3-alt" style="color: #38bdf8;"></i> Tailwind CSS</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hero Right Interactive Showcase Card -->
-        <div class="hero-visual-card">
-          <!-- Floating Badge Top Left -->
-          <div class="floating-badge badge-top-left">
-            <div class="badge-icon">
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="badge-content">
-              <h4>5.0 Rating</h4>
-              <p>Over 80+ reviews</p>
-            </div>
-          </div>
-
-          <!-- Glassmorphic Showcase Profile Card -->
-          <div class="showcase-glass-card">
-            <div class="card-top-bar">
-              <div class="window-dots">
-                <span class="dot-red"></span>
-                <span class="dot-yellow"></span>
-                <span class="dot-green"></span>
-              </div>
-              <div class="live-indicator">
-                <i class="fas fa-circle" style="font-size: 8px;"></i>
-                System Active
-              </div>
-            </div>
-
-            <div class="card-profile-header">
-              <div class="avatar-wrapper">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Lead Freelance Engineer" class="avatar-img">
-                <span class="verified-icon"><i class="fas fa-check"></i></span>
-              </div>
-              <div class="profile-info">
-                <h3>Alex Morgan</h3>
-                <p>Senior Full-Stack & UI/UX Architect</p>
-                <div class="card-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <span>5.0 (Top Rated Plus)</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Code Snippet Display -->
-            <div class="code-snippet-box">
-              <code>
-                <span style="color: #f43f5e;">const</span> <span class="highlight">freelancer</span> = {<br>
-                &nbsp;&nbsp;role: <span style="color: #34d399;">'Full-Stack Specialist'</span>,<br>
-                &nbsp;&nbsp;efficiency: <span style="color: #fbbf24;">100</span>,<br>
-                &nbsp;&nbsp;deliverOnTime: <span style="color: #60a5fa;">true</span>,<br>
-                &nbsp;&nbsp;status: <span style="color: #a78bfa;">'Building Tomorrow's Web'</span><br>
-                };
-              </code>
-            </div>
-
-            <!-- Card Quick Perks -->
-            <div class="card-perks">
-              <div class="perk-item">
-                <div class="perk-number">100%</div>
-                <div class="perk-text">Job Success</div>
-              </div>
-              <div class="perk-item">
-                <div class="perk-number">&lt; 1hr</div>
-                <div class="perk-text">Response Time</div>
-              </div>
-              <div class="perk-item">
-                <div class="perk-number">30+</div>
-                <div class="perk-text">Global Clients</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Floating Badge Bottom Right -->
-          <div class="floating-badge badge-bottom-right">
-            <div class="badge-icon">
-              <i class="fas fa-rocket"></i>
-            </div>
-            <div class="badge-content">
-              <h4>Lightning Fast</h4>
-              <p>Top 1% Performance</p>
-            </div>
-          </div>
-        </div>
+      <!-- Facility Highlight Pills -->
+      <div class="hero-badges-row">
+        <a href="#facilities" class="badge-facility-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          100% Client-Side Privacy Vault
+        </a>
+        <a href="#facilities" class="badge-facility-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          Target Word Limit Monitoring
+        </a>
+        <a href="#facilities" class="badge-facility-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Multi-Format Document Export (TXT/MD/DOC)
+        </a>
+        <a href="#facilities" class="badge-facility-pill">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          Flesch-Kincaid Readability Scoring
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ========================================================================
-       Stats Counter Banner Section
-       ======================================================================== -->
-  <section class="stats-banner">
+  <!-- THE MASTER WORKBENCH (Interactive Text Engine) -->
+  <main id="workbench" class="workbench-section">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-number-wrapper">
-            <span class="stat-number" data-target="150">0</span>
-            <span class="stat-suffix">+</span>
+      <div class="workbench-card">
+        
+        <!-- Workbench Controls & Target Goal Header -->
+        <div class="workbench-header">
+          <!-- Target Word Limit Controls -->
+          <div class="target-limit-box">
+            <div class="target-label-group">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+              <span>Target Word Limit:</span>
+            </div>
+
+            <div class="target-input-wrapper">
+              <input 
+                type="number" 
+                id="targetLimitInput" 
+                class="target-input" 
+                value="500" 
+                min="1" 
+                step="50" 
+                aria-label="Target Word Limit"
+              >
+              <span class="target-unit">words</span>
+            </div>
+
+            <!-- Target Presets -->
+            <div class="target-presets">
+              <button type="button" class="preset-chip" data-target="50">50w (Social)</button>
+              <button type="button" class="preset-chip" data-target="150">150w (Abstract)</button>
+              <button type="button" class="preset-chip active" data-target="500">500w (Essay)</button>
+              <button type="button" class="preset-chip" data-target="1000">1,000w (Article)</button>
+              <button type="button" class="preset-chip" data-target="2500">2,500w (Longform)</button>
+            </div>
           </div>
-          <div class="stat-label">Projects Completed</div>
+
+          <!-- Sample Loader Action -->
+          <div class="sample-loader-group">
+            <span style="font-size:0.8125rem; color:var(--text-muted); font-weight:500;">Load Sample:</span>
+            <button type="button" class="text-btn btn-load-sample" data-sample="academic">Academic Essay</button>
+            <button type="button" class="text-btn btn-load-sample" data-sample="editorial">Editorial Review</button>
+            <button type="button" class="text-btn btn-load-sample" data-sample="speech">Keynote Speech</button>
+          </div>
         </div>
-        <div class="stat-card">
-          <div class="stat-number-wrapper">
-            <span class="stat-number" data-target="99.4">0</span>
-            <span class="stat-suffix">%</span>
+
+        <!-- Target Progress Monitor Ribbon -->
+        <div class="target-progress-panel">
+          <div class="target-stats-line">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span id="targetStatusTag" class="target-status-tag status-ok">On Track</span>
+              <strong id="targetRemainingWords" style="color:var(--text-primary); font-family:var(--font-mono);">420 words remaining</strong>
+            </div>
+            <div style="font-size:0.8125rem; font-family:var(--font-mono); color:var(--text-muted);">
+              Progress: <span id="targetPercentLabel" style="font-weight:700; color:var(--gold-primary);">16%</span>
+            </div>
           </div>
-          <div class="stat-label">Client Satisfaction</div>
+          <div class="target-progress-bar-bg" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <div id="targetProgressBar" class="target-progress-bar-fill" style="width: 16%;"></div>
+          </div>
         </div>
-        <div class="stat-card">
-          <div class="stat-number-wrapper">
-            <span class="stat-number" data-target="5">0</span>
-            <span class="stat-suffix">+</span>
-          </div>
-          <div class="stat-label">Years of Experience</div>
+
+        <!-- Main Textarea Editor -->
+        <div class="editor-body-wrapper">
+          <textarea 
+            id="mainTextarea" 
+            class="main-textarea" 
+            placeholder="Type, compose, or paste your manuscript here... Real-time counts, target limit tracking, and instant formatting will calculate immediately."
+            aria-label="Text editor input"
+            spellcheck="true"
+          ></textarea>
         </div>
-        <div class="stat-card">
-          <div class="stat-number-wrapper">
-            <span class="stat-number" data-target="14">0</span>
-            <span class="stat-suffix">+</span>
+
+        <!-- Action Toolbar (Bottom of Textarea) -->
+        <div class="editor-toolbar-footer">
+          <div class="editor-action-buttons">
+            <!-- Copy to Clipboard Button -->
+            <button type="button" id="btnCopy" class="btn-tool-action btn-copy" title="Copy entire text to clipboard (Ctrl+Shift+C)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copy to Clipboard
+            </button>
+
+            <!-- Clear Text Button -->
+            <button type="button" id="btnClear" class="btn-tool-action btn-clear" title="Clear entire document (Safe undo provided)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+              Clear Text
+            </button>
+
+            <!-- Download Dropdown System -->
+            <div id="downloadDropdownContainer" class="dropdown-container">
+              <button type="button" id="btnDownloadDropdownToggle" class="btn-tool-action" aria-haspopup="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Document &blacktriangledown;
+              </button>
+
+              <div class="dropdown-menu" role="menu">
+                <button type="button" class="dropdown-item download-option" data-format="txt" role="menuitem">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                  Plain Text File (.txt)
+                </button>
+                <button type="button" class="dropdown-item download-option" data-format="doc" role="menuitem">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                  Word Manuscript (.doc)
+                </button>
+                <button type="button" class="dropdown-item download-option" data-format="md" role="menuitem">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><polyline points="7 8 12 13 17 8"></polyline><line x1="12" y1="13" x2="12" y2="17"></line></svg>
+                  Markdown (.md) with Stats
+                </button>
+                <button type="button" class="dropdown-item download-option" data-format="print" role="menuitem">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                  Print / Save as PDF
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="stat-label">Industry Awards</div>
+
+          <!-- Session & Autosave Status -->
+          <div class="editor-status-info">
+            <span id="autoSaveStatus" class="auto-save-status">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Auto-saved in browser
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ========================================================================
-       Services Section
-       ======================================================================== -->
-  <section id="services">
+      <!-- PRIMARY REAL-TIME METRICS GRID -->
+      <section class="metrics-section" aria-label="Real-time Metrics Dashboard">
+        <div class="metrics-grid-primary">
+          <!-- 1. Word Count -->
+          <div class="metric-card accent-gold">
+            <div class="metric-header">
+              <span class="metric-title">Word Count</span>
+              <div class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="metric-value-box">
+              <span id="metricWords" class="metric-number">0</span>
+            </div>
+            <p class="metric-detail">Calculated via Unicode regex boundaries</p>
+          </div>
+
+          <!-- 2. Character Count (With Spaces) -->
+          <div class="metric-card accent-navy">
+            <div class="metric-header">
+              <span class="metric-title">Characters (With Spaces)</span>
+              <div class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                  <line x1="9" y1="20" x2="15" y2="20"></line>
+                  <line x1="12" y1="4" x2="12" y2="20"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="metric-value-box">
+              <span id="metricChars" class="metric-number">0</span>
+            </div>
+            <p class="metric-detail">Total glyphs, spaces &amp; line returns</p>
+          </div>
+
+          <!-- 3. Character Count (No Spaces) -->
+          <div class="metric-card accent-gold">
+            <div class="metric-header">
+              <span class="metric-title">Characters (No Spaces)</span>
+              <div class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="metric-value-box">
+              <span id="metricCharsNoSpace" class="metric-number">0</span>
+            </div>
+            <p class="metric-detail">Pure alphanumeric &amp; punctuation symbols</p>
+          </div>
+
+          <!-- 4. Target Word Limit Status -->
+          <div class="metric-card accent-navy">
+            <div class="metric-header">
+              <span class="metric-title">Target Word Status</span>
+              <div class="metric-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="metric-value-box">
+              <span id="metricTargetStatus" style="font-family:var(--font-mono); font-size:1.45rem; font-weight:700; color:var(--gold-primary);">0 / 500 words</span>
+            </div>
+            <p class="metric-detail">Compliance indicator against goal</p>
+          </div>
+        </div>
+
+        <!-- Secondary Metrics Bar -->
+        <div class="metrics-grid-secondary">
+          <div class="sub-metric-card">
+            <div class="sub-metric-label">Sentences</div>
+            <div id="metricSentences" class="sub-metric-value">0</div>
+            <div class="sub-metric-caption">Punctuation marks</div>
+          </div>
+          <div class="sub-metric-card">
+            <div class="sub-metric-label">Paragraphs</div>
+            <div id="metricParagraphs" class="sub-metric-value">0</div>
+            <div class="sub-metric-caption">Newline blocks</div>
+          </div>
+          <div class="sub-metric-card">
+            <div class="sub-metric-label">Reading Time</div>
+            <div id="metricReadingTime" class="sub-metric-value">0 sec</div>
+            <div class="sub-metric-caption">Avg. 220 wpm</div>
+          </div>
+          <div class="sub-metric-card">
+            <div class="sub-metric-label">Speaking Time</div>
+            <div id="metricSpeakingTime" class="sub-metric-value">0 sec</div>
+            <div class="sub-metric-caption">Avg. 130 wpm cadence</div>
+          </div>
+          <div class="sub-metric-card">
+            <div class="sub-metric-label">Reading Ease</div>
+            <div id="metricReadingEase" class="sub-metric-value">100 / 100</div>
+            <div class="sub-metric-caption">Flesch-Kincaid scale</div>
+          </div>
+          <div class="sub-metric-card">
+            <div class="sub-metric-label">Avg. Word Length</div>
+            <div id="metricAvgWordLen" class="sub-metric-value">0 chars</div>
+            <div class="sub-metric-caption">Lexical density</div>
+          </div>
+        </div>
+
+        <!-- Quick Formatting Toolbox -->
+        <div class="quick-tools-container">
+          <div class="quick-tools-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>One-Click Text Transformations &amp; Case Utilities</span>
+          </div>
+          <div class="quick-tools-row">
+            <button type="button" class="chip-tool-btn" data-action="uppercase">UPPERCASE</button>
+            <button type="button" class="chip-tool-btn" data-action="lowercase">lowercase</button>
+            <button type="button" class="chip-tool-btn" data-action="titlecase">Title Case (Chicago Style)</button>
+            <button type="button" class="chip-tool-btn" data-action="sentencecase">Sentence case</button>
+            <button type="button" class="chip-tool-btn" data-action="clean-spaces">Remove Extra Spaces</button>
+            <button type="button" class="chip-tool-btn" data-action="remove-empty-lines">Remove Blank Lines</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- SERVICE FACILITIES SHOWCASE SECTION (FRONT SITE CORE HIGHLIGHT) -->
+  <section id="facilities" class="facilities-section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-badge"><i class="fas fa-sparkles"></i> High-Impact Technical Capabilities</span>
-        <h2 class="section-title">Specialized Services Engineered for <span class="gradient-text">Maximum Impact</span></h2>
-        <p class="section-subtitle">
-          From concept to high-scale production, we deliver full-cycle software engineering, modern interface craftsmanship, and scalable cloud solutions tailored for ambitious brands.
+      <div class="section-head">
+        <span class="section-eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          Sovereign Architectural Standards
+        </span>
+        <h2 class="section-title">Highlighting Our 8 Core Service Facilities</h2>
+        <p class="section-desc">
+          Verbum Atelier unites classic editorial aesthetics with robust, zero-latency computing facilities engineered to guarantee privacy, accuracy, and effortless publishing.
         </p>
       </div>
 
-      <!-- Real-Time Interactive Service Search & Category Filters -->
-      <div class="services-search-wrapper">
-        <div class="services-search-bar">
-          <i class="fas fa-search"></i>
-          <input type="text" id="service-search-input" placeholder="Search services (e.g. 'React', 'Mobile', 'AI', 'Stripe', 'SEO', 'Design')...">
-          <button id="clear-service-search" class="clear-search-btn" title="Clear search" style="display: none;"><i class="fas fa-times"></i></button>
-        </div>
-        <div class="service-category-pills">
-          <button class="service-filter-btn active" data-category="all">All Services (8)</button>
-          <button class="service-filter-btn" data-category="dev">Development</button>
-          <button class="service-filter-btn" data-category="design">UI/UX Design</button>
-          <button class="service-filter-btn" data-category="ecommerce">E-Commerce</button>
-          <button class="service-filter-btn" data-category="mobile">Mobile Apps</button>
-          <button class="service-filter-btn" data-category="cloud-ai">AI &amp; Cloud</button>
-        </div>
+      <!-- Facility Category Filters -->
+      <div class="facility-filter-tabs" role="tablist">
+        <button class="filter-tab active" data-filter="all">All Facilities (8)</button>
+        <button class="filter-tab" data-filter="privacy">Privacy &amp; Security</button>
+        <button class="filter-tab" data-filter="linguistic">Linguistic Engine</button>
+        <button class="filter-tab" data-filter="export">Publishing &amp; Export</button>
       </div>
 
-      <!-- Services Grid: 8 Comprehensive Services -->
-      <div class="services-grid" id="services-grid">
-        <!-- Service Card 1 -->
-        <div class="service-card" data-category="dev" data-tags="react nextjs node typescript fullstack web app spa ssr postgresql prisma">
-          <div class="service-top-info">
-            <span class="service-tag">Web Development</span>
-            <span class="service-price-tag">From $1,499</span>
+      <!-- Facilities Grid -->
+      <div class="facilities-grid">
+        
+        <!-- Facility 1: Client-Side Privacy Vault -->
+        <article class="facility-card" data-category="privacy">
+          <span class="facility-card-badge">Zero-Cloud</span>
+          <div class="facility-icon-frame" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
           </div>
-          <div class="service-icon-wrapper">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3>Full-Stack Web Development</h3>
-          <p>
-            Custom, high-velocity web applications built with Next.js, React, Node.js, and TypeScript. Optimized for sub-second page loads, ironclad security, and effortless horizontal scalability.
+          <h3 class="facility-name">Client-Side Privacy Vault</h3>
+          <p class="facility-desc">
+            Zero server uploads. All counting, regex operations, and downloads execute purely in local RAM. Ideal for confidential legal, medical, and NDA drafts.
           </p>
-          <ul class="service-features">
-            <li><span class="feature-check">✓</span> Modern SPAs, SSR &amp; Static Edge Delivery</li>
-            <li><span class="feature-check">✓</span> RESTful &amp; GraphQL API Architecture</li>
-            <li><span class="feature-check">✓</span> Robust Database &amp; ORM Infrastructure</li>
+          <ul class="facility-specs-list">
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Zero server POST transmission</span>
+            </li>
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>GDPR, HIPAA, and NDA safe</span>
+            </li>
           </ul>
-          <div class="service-actions-row">
-            <button class="btn btn-outline open-service-modal-btn" data-service-id="1">
-              <span>View Specs &amp; Deliverables</span>
-              <i class="fas fa-list-check"></i>
-            </button>
-            <a href="#calculator" class="btn btn-secondary calc-preset-btn" data-preset="web">
-              <span>Estimate</span>
-              <i class="fas fa-calculator"></i>
-            </a>
-          </div>
-        </div>
+          <button type="button" class="facility-action-link btn-facility-inspect" data-facility="privacy">
+            Inspect Architecture &rarr;
+          </button>
+        </article>
 
-        <!-- Service Card 2 -->
-        <div class="service-card" data-category="design" data-tags="ui ux figma design system prototype wireframe user experience mobile interface tokens">
-          <div class="service-top-info">
-            <span class="service-tag">UI/UX &amp; Systems</span>
-            <span class="service-price-tag">From $1,199</span>
+        <!-- Facility 2: Linguistic Analytics Engine -->
+        <article class="facility-card" data-category="linguistic">
+          <span class="facility-card-badge">Sub-ms Speed</span>
+          <div class="facility-icon-frame" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
           </div>
-          <div class="service-icon-wrapper">
-            <i class="fas fa-pencil-ruler"></i>
-          </div>
-          <h3>UI/UX &amp; Product Design</h3>
-          <p>
-            Human-centered product design that pairs striking visual elegance with frictionless user journeys. Wireframes, high-fidelity Figma prototypes, and comprehensive scalable design token systems.
+          <h3 class="facility-name">Linguistic Analytics Engine</h3>
+          <p class="facility-desc">
+            High-throughput Unicode-aware tokenization handling contractions, hyphenated compounds, diacritics, and honorific sentence boundaries flawlessly.
           </p>
-          <ul class="service-features">
-            <li><span class="feature-check">✓</span> User Research &amp; Interactive Flow Mapping</li>
-            <li><span class="feature-check">✓</span> Clickable Figma Prototypes &amp; Micro-Animations</li>
-            <li><span class="feature-check">✓</span> Production-Ready Design Tokens &amp; Component Kits</li>
+          <ul class="facility-specs-list">
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Sub-millisecond tokenization latency</span>
+            </li>
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Tested on 50,000+ word manuscripts</span>
+            </li>
           </ul>
-          <div class="service-actions-row">
-            <button class="btn btn-outline open-service-modal-btn" data-service-id="2">
-              <span>View Specs &amp; Deliverables</span>
-              <i class="fas fa-list-check"></i>
-            </button>
-            <a href="#calculator" class="btn btn-secondary calc-preset-btn" data-preset="uiux">
-              <span>Estimate</span>
-              <i class="fas fa-calculator"></i>
-            </a>
-          </div>
-        </div>
+          <button type="button" class="facility-action-link btn-facility-inspect" data-facility="engine">
+            Inspect Architecture &rarr;
+          </button>
+        </article>
 
-        <!-- Service Card 3 -->
-        <div class="service-card" data-category="ecommerce" data-tags="ecommerce shopify store stripe payments checkout cart 3d product cro headless">
-          <div class="service-top-info">
-            <span class="service-tag">E-Commerce</span>
-            <span class="service-price-tag">From $2,299</span>
+        <!-- Facility 3: Target Word Limiter & Compliance -->
+        <article class="facility-card" data-category="linguistic">
+          <span class="facility-card-badge">Editorial Quota</span>
+          <div class="facility-icon-frame" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
           </div>
-          <div class="service-icon-wrapper">
-            <i class="fas fa-shopping-bag"></i>
-          </div>
-          <h3>Headless E-Commerce Architecture</h3>
-          <p>
-            High-converting digital storefronts engineered for rapid growth. Headless Shopify and Next.js architectures with seamless Stripe checkout, 3D product previews, and conversion-optimized funnels.
+          <h3 class="facility-name">Target Word Limit Monitor</h3>
+          <p class="facility-desc">
+            Dynamic milestone regulation for essay limits, grant proposals, and publisher quotas with visual progress states and milestone alerts.
           </p>
-          <ul class="service-features">
-            <li><span class="feature-check">✓</span> Shopify Storefront API &amp; Custom Gateways</li>
-            <li><span class="feature-check">✓</span> Stripe, Apple Pay, Multi-Currency Support</li>
-            <li><span class="feature-check">✓</span> Cart Recovery &amp; Conversion Rate Optimization</li>
+          <ul class="facility-specs-list">
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Adaptive 3-tier visual gauge</span>
+            </li>
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Harmonic audio chime on completion</span>
+            </li>
           </ul>
-          <div class="service-actions-row">
-            <button class="btn btn-outline open-service-modal-btn" data-service-id="3">
-              <span>View Specs &amp; Deliverables</span>
-              <i class="fas fa-list-check"></i>
-            </button>
-            <a href="#calculator" class="btn btn-secondary calc-preset-btn" data-preset="ecommerce">
-              <span>Estimate</span>
-              <i class="fas fa-calculator"></i>
-            </a>
-          </div>
-        </div>
+          <button type="button" class="facility-action-link btn-facility-inspect" data-facility="limiter">
+            Inspect Architecture &rarr;
+          </button>
+        </article>
 
-        <!-- Service Card 4 -->
-        <div class="service-card" data-category="mobile" data-tags="mobile app react native expo ios android biometrics offline push notifications flutter">
-          <div class="service-top-info">
-            <span class="service-tag">Mobile Apps</span>
-            <span class="service-price-tag">From $2,899</span>
+        <!-- Facility 4: Multi-Format Document Export -->
+        <article class="facility-card" data-category="export">
+          <span class="facility-card-badge">Instant Blobs</span>
+          <div class="facility-icon-frame" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
           </div>
-          <div class="service-icon-wrapper">
-            <i class="fas fa-mobile-screen-button"></i>
-          </div>
-          <h3>Cross-Platform Mobile Apps</h3>
-          <p>
-            Native-performance iOS and Android applications utilizing React Native and Expo. Silky 60fps animations, biometric authentication, offline-first data caching, and automated cloud sync.
+          <h3 class="facility-name">Multi-Format Document Archival</h3>
+          <p class="facility-desc">
+            Download your work directly as clean Plain Text (.txt), Word manuscript (.doc) with analytical tables, or Markdown (.md) with YAML metadata.
           </p>
-          <ul class="service-features">
-            <li><span class="feature-check">✓</span> App Store &amp; Google Play Store Deployment Ready</li>
-            <li><span class="feature-check">✓</span> Push Notifications &amp; Biometric Security</li>
-            <li><span class="feature-check">✓</span> Offline Local Database Sync &amp; GraphQL API</li>
+          <ul class="facility-specs-list">
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Native browser Blob streaming</span>
+            </li>
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Print &amp; PDF styling stylesheet included</span>
+            </li>
           </ul>
-          <div class="service-actions-row">
-            <button class="btn btn-outline open-service-modal-btn" data-service-id="4">
-              <span>View Specs &amp; Deliverables</span>
-              <i class="fas fa-list-check"></i>
-            </button>
-            <a href="#calculator" class="btn btn-secondary calc-preset-btn" data-preset="mobile">
-              <span>Estimate</span>
-              <i class="fas fa-calculator"></i>
-            </a>
-          </div>
-        </div>
+          <button type="button" class="facility-action-link btn-facility-inspect" data-facility="export">
+            Inspect Architecture &rarr;
+          </button>
+        </article>
 
-        <!-- Service Card 5 -->
-        <div class="service-card" data-category="dev" data-tags="speed performance seo core web vitals lighthouse cache cdn schema audit ttfb">
-          <div class="service-top-info">
-            <span class="service-tag">Performance &amp; SEO</span>
-            <span class="service-price-tag">From $899</span>
+        <!-- Facility 5: Readability & Lexical Grading -->
+        <article class="facility-card" data-category="linguistic">
+          <span class="facility-card-badge">Flesch Formula</span>
+          <div class="facility-icon-frame" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
           </div>
-          <div class="service-icon-wrapper">
-            <i class="fas fa-bolt"></i>
-          </div>
-          <h3>Speed &amp; SEO Optimization Suite</h3>
-          <p>
-            Fine-tuning Core Web Vitals to achieve 98+ Google PageSpeed benchmarks. Aggressive asset minification, edge caching, image optimization pipelines, and comprehensive schema markup.
+          <h3 class="facility-name">Readability &amp; Lexical Grading</h3>
+          <p class="facility-desc">
+            Mathematical Flesch Reading Ease algorithm calculating cognitive load, average syllable weights, and grade-level accessibility in real time.
           </p>
-          <ul class="service-features">
-            <li><span class="feature-check">✓</span> 98+ Mobile &amp; Desktop PageSpeed Score Guarantee</li>
-            <li><span class="feature-check">✓</span> Semantic Structured Schema &amp; Rich Snippets</li>
-            <li><span class="feature-check">✓</span> Sub-100ms TTFB Server Response Tuning</li>
+          <ul class="facility-specs-list">
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Automated syllable heuristic model</span>
+            </li>
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Grade 5 to Post-Graduate scale</span>
+            </li>
           </ul>
-          <div class="service-actions-row">
-            <button class="btn btn-outline open-service-modal-btn" data-service-id="5">
-              <span>View Specs &amp; Deliverables</span>
-              <i class="fas fa-list-check"></i>
-            </button>
-            <a href="#calculator" class="btn btn-secondary calc-preset-btn" data-preset="web">
-              <span>Estimate</span>
-              <i class="fas fa-calculator"></i>
-            </a>
-          </div>
-        </div>
+          <button type="button" class="facility-action-link btn-facility-inspect" data-facility="readability">
+            Inspect Architecture &rarr;
+          </button>
+        </article>
 
-        <!-- Service Card 6 -->
-        <div class="service-card" data-category="cloud-ai" data-tags="cloud devops aws docker github actions cicd kubernetes vercel terraform serverless">
-          <div class="service-top-info">
-            <span class="service-tag">Cloud &amp; DevOps</span>
-            <span class="service-price-tag">From $1,399</span>
+        <!-- Facility 6: Typographic & Case Transformation -->
+        <article class="facility-card" data-category="export">
+          <span class="facility-card-badge">Editorial Suite</span>
+          <div class="facility-icon-frame" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="4 7 4 4 20 4 20 7"></polyline>
+              <line x1="9" y1="20" x2="15" y2="20"></line>
+              <line x1="12" y1="4" x2="12" y2="20"></line>
+            </svg>
           </div>
-          <div class="service-icon-wrapper">
-            <i class="fas fa-cloud"></i>
-          </div>
-          <h3>Cloud DevOps &amp; CI/CD Infrastructure</h3>
-          <p>
-            Fully automated deployment pipelines, Docker containerization, and zero-downtime microservices hosted on AWS, Vercel, and Cloudflare. Enterprise security headers, automated backups, and autoscaling.
+          <h3 class="facility-name">Typographic Transformations</h3>
+          <p class="facility-desc">
+            Instant Chicago/AP Title Case capitalization, uppercase/lowercase inversion, whitespace compression, and redundant blank line removal.
           </p>
-          <ul class="service-features">
-            <li><span class="feature-check">✓</span> GitHub Actions CI/CD Continuous Delivery</li>
-            <li><span class="feature-check">✓</span> Serverless Functions &amp; Global Edge Routing</li>
-            <li><span class="feature-check">✓</span> SSL Encryption, WAF &amp; DDoS Mitigation</li>
+          <ul class="facility-specs-list">
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>AP/Chicago preposition rules</span>
+            </li>
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Non-destructive transforms with Undo</span>
+            </li>
           </ul>
-          <div class="service-actions-row">
-            <button class="btn btn-outline open-service-modal-btn" data-service-id="6">
-              <span>View Specs &amp; Deliverables</span>
-              <i class="fas fa-list-check"></i>
-            </button>
-            <a href="#calculator" class="btn btn-secondary calc-preset-btn" data-preset="web">
-              <span>Estimate</span>
-              <i class="fas fa-calculator"></i>
-            </a>
-          </div>
-        </div>
+          <button type="button" class="facility-action-link btn-facility-inspect" data-facility="typography">
+            Inspect Architecture &rarr;
+          </button>
+        </article>
 
-        <!-- Service Card 7 -->
-        <div class="service-card" data-category="cloud-ai" data-tags="ai agents automation openai gemini llm bot rag vector database search workflows">
-          <div class="service-top-info">
-            <span class="service-tag">AI &amp; Automation</span>
-            <span class="service-price-tag">From $1,799</span>
+        <!-- Facility 7: Speaking & Reading Cadence Pacing -->
+        <article class="facility-card" data-category="linguistic">
+          <span class="facility-card-badge">Keynote Cadence</span>
+          <div class="facility-icon-frame" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
           </div>
-          <div class="service-icon-wrapper">
-            <i class="fas fa-robot"></i>
-          </div>
-          <h3>AI Agents &amp; Intelligent Automation</h3>
-          <p>
-            Custom AI agent workflows, retrieval-augmented generation (RAG) search pipelines, and OpenAI / Gemini API integrations designed to automate repetitive business operations and boost team productivity.
+          <h3 class="facility-name">Speaking &amp; Reading Cadence</h3>
+          <p class="facility-desc">
+            Accurate estimation of silent reading duration (220 WPM standard) and verbal keynote delivery time (130 WPM speech cadence).
           </p>
-          <ul class="service-features">
-            <li><span class="feature-check">✓</span> Custom LLM Fine-Tuning &amp; Embeddings RAG</li>
-            <li><span class="feature-check">✓</span> Automated Customer Support &amp; Lead Qualification Bots</li>
-            <li><span class="feature-check">✓</span> Vector DB Integration (Pinecone / Supabase pgvector)</li>
+          <ul class="facility-specs-list">
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Seconds-level precision timing</span>
+            </li>
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Essential for podcasts and lectures</span>
+            </li>
           </ul>
-          <div class="service-actions-row">
-            <button class="btn btn-outline open-service-modal-btn" data-service-id="7">
-              <span>View Specs &amp; Deliverables</span>
-              <i class="fas fa-list-check"></i>
-            </button>
-            <a href="#calculator" class="btn btn-secondary calc-preset-btn" data-preset="ai">
-              <span>Estimate</span>
-              <i class="fas fa-calculator"></i>
-            </a>
-          </div>
-        </div>
+          <button type="button" class="facility-action-link btn-facility-inspect" data-facility="cadence">
+            Inspect Architecture &rarr;
+          </button>
+        </article>
 
-        <!-- Service Card 8 -->
-        <div class="service-card" data-category="dev" data-tags="security audit penetration code refactoring owasp clean code vulnerabilities auth">
-          <div class="service-top-info">
-            <span class="service-tag">Code Audit &amp; Security</span>
-            <span class="service-price-tag">From $1,099</span>
+        <!-- Facility 8: Local Session Memory & Safe Undo -->
+        <article class="facility-card" data-category="privacy">
+          <span class="facility-card-badge">Zero Work Loss</span>
+          <div class="facility-icon-frame" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+              <polyline points="17 21 17 13 7 13 7 21"></polyline>
+              <polyline points="7 3 7 8 15 8"></polyline>
+            </svg>
           </div>
-          <div class="service-icon-wrapper">
-            <i class="fas fa-shield-halved"></i>
-          </div>
-          <h3>Security Audits &amp; Code Refactoring</h3>
-          <p>
-            Comprehensive codebase health checks, dependency vulnerability scanning, OWASP Top 10 hardening, and architectural cleanup to eliminate technical debt and ensure compliance.
+          <h3 class="facility-name">Local Session Memory &amp; Undo</h3>
+          <p class="facility-desc">
+            Live client-side caching ensures you never lose a sentence after unexpected browser closures, paired with safe one-click Undo on workspace clearing.
           </p>
-          <ul class="service-features">
-            <li><span class="feature-check">✓</span> Penetration Testing &amp; Vulnerability Remediation</li>
-            <li><span class="feature-check">✓</span> Technical Debt Audit &amp; Modular Code Modernization</li>
-            <li><span class="feature-check">✓</span> Zero Critical Security Flaws Guarantee</li>
+          <ul class="facility-specs-list">
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Continuous LocalStorage sync</span>
+            </li>
+            <li class="facility-spec-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Temporary emergency Undo buffer</span>
+            </li>
           </ul>
-          <div class="service-actions-row">
-            <button class="btn btn-outline open-service-modal-btn" data-service-id="8">
-              <span>View Specs &amp; Deliverables</span>
-              <i class="fas fa-list-check"></i>
-            </button>
-            <a href="#calculator" class="btn btn-secondary calc-preset-btn" data-preset="web">
-              <span>Estimate</span>
-              <i class="fas fa-calculator"></i>
-            </a>
-          </div>
-        </div>
+          <button type="button" class="facility-action-link btn-facility-inspect" data-facility="persistence">
+            Inspect Architecture &rarr;
+          </button>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- ========================================================================
-       Automated Service Quote & Price Calculator Section
-       ======================================================================== -->
-  <section id="calculator" class="calculator-section">
+  <!-- INDUSTRY & ACADEMIC WORD COUNT GUIDELINES -->
+  <section id="guidelines" class="guidelines-section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-badge"><i class="fas fa-calculator"></i> Real-Time Cost Estimator</span>
-        <h2 class="section-title">Automated Project Quote &amp; <span class="gradient-text">Budget Calculator</span></h2>
-        <p class="section-subtitle">
-          Configure your exact project scope below. Watch the budget, estimated delivery timeline, and sprint scope calculate automatically in real-time.
+      <div class="section-head">
+        <span class="section-eyebrow">EDITORIAL BENCHMARKS</span>
+        <h2 class="section-title">Standard Word Count Allocations</h2>
+        <p class="section-desc">
+          Click any preset below to automatically apply the corresponding target word limit directly into your studio workbench.
         </p>
       </div>
 
-      <div class="calc-grid">
-        <!-- Configurator Panel -->
-        <div class="calc-config-box">
-          <!-- Step 1: Core Service -->
-          <div class="calc-step">
-            <div class="calc-step-header">
-              <div class="calc-step-title">
-                <span class="calc-step-badge">1</span>
-                <span>Select Primary Service</span>
-              </div>
-              <span style="font-size: 0.8rem; color: var(--text-muted);">Step 1 of 4</span>
-            </div>
-            <select id="calc-service" class="calc-select">
-              <option value="web" data-base="1499" data-days="21">Full-Stack Web Application (Base: $1,499)</option>
-              <option value="ecommerce" data-base="2299" data-days="28">Headless E-Commerce Store (Base: $2,299)</option>
-              <option value="mobile" data-base="2899" data-days="35">Cross-Platform Mobile App (Base: $2,899)</option>
-              <option value="uiux" data-base="1199" data-days="14">UI/UX Prototyping &amp; Design System (Base: $1,199)</option>
-              <option value="ai" data-base="1799" data-days="21">AI Agents &amp; Workflow Automation (Base: $1,799)</option>
-            </select>
-          </div>
-
-          <!-- Step 2: Scope / Screens Slider -->
-          <div class="calc-step">
-            <div class="calc-step-header">
-              <div class="calc-step-title">
-                <span class="calc-step-badge">2</span>
-                <span>Estimated Scope &amp; Views</span>
-              </div>
-              <span class="calc-slider-value" id="calc-scope-display">5 Screens / Views</span>
-            </div>
-            <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 0.75rem;">Adjust the number of unique views, dashboard pages, or application screens.</p>
-            <div class="calc-range-wrapper">
-              <div class="range-labels">
-                <span>1 View</span>
-                <span>10 Views</span>
-                <span>25+ Views</span>
-              </div>
-              <input type="range" id="calc-scope" class="calc-slider" min="1" max="25" value="5">
-            </div>
-          </div>
-
-          <!-- Step 3: Feature Add-ons -->
-          <div class="calc-step">
-            <div class="calc-step-header">
-              <div class="calc-step-title">
-                <span class="calc-step-badge">3</span>
-                <span>Select High-Impact Add-Ons</span>
-              </div>
-              <span style="font-size: 0.8rem; color: var(--text-muted);">Custom Add-ons</span>
-            </div>
-            <div class="calc-addons-grid">
-              <label class="calc-addon-card" data-addon="auth">
-                <input type="checkbox" class="calc-addon-checkbox" id="addon-auth" data-cost="450" data-days="3">
-                <div class="calc-addon-info">
-                  <div class="calc-addon-title">
-                    <span>User Auth &amp; RBAC</span>
-                    <span class="calc-addon-price">+$450</span>
-                  </div>
-                  <div class="calc-addon-desc">OAuth, JWT, user roles &amp; passwordless login</div>
-                </div>
-              </label>
-
-              <label class="calc-addon-card" data-addon="payments">
-                <input type="checkbox" class="calc-addon-checkbox" id="addon-payments" data-cost="500" data-days="4">
-                <div class="calc-addon-info">
-                  <div class="calc-addon-title">
-                    <span>Payment Gateway</span>
-                    <span class="calc-addon-price">+$500</span>
-                  </div>
-                  <div class="calc-addon-desc">Stripe, Apple Pay &amp; subscription billing</div>
-                </div>
-              </label>
-
-              <label class="calc-addon-card" data-addon="cms">
-                <input type="checkbox" class="calc-addon-checkbox" id="addon-cms" data-cost="600" data-days="4">
-                <div class="calc-addon-info">
-                  <div class="calc-addon-title">
-                    <span>Headless CMS</span>
-                    <span class="calc-addon-price">+$600</span>
-                  </div>
-                  <div class="calc-addon-desc">Sanity / Strapi dynamic content dashboard</div>
-                </div>
-              </label>
-
-              <label class="calc-addon-card" data-addon="ai">
-                <input type="checkbox" class="calc-addon-checkbox" id="addon-ai" data-cost="800" data-days="5">
-                <div class="calc-addon-info">
-                  <div class="calc-addon-title">
-                    <span>AI Assistant / Bot</span>
-                    <span class="calc-addon-price">+$800</span>
-                  </div>
-                  <div class="calc-addon-desc">Custom LLM prompt engine &amp; smart search</div>
-                </div>
-              </label>
-
-              <label class="calc-addon-card" data-addon="seo">
-                <input type="checkbox" class="calc-addon-checkbox" id="addon-seo" data-cost="400" data-days="2">
-                <div class="calc-addon-info">
-                  <div class="calc-addon-title">
-                    <span>SEO &amp; Speed Suite</span>
-                    <span class="calc-addon-price">+$400</span>
-                  </div>
-                  <div class="calc-addon-desc">98+ Lighthouse score &amp; rich schema tags</div>
-                </div>
-              </label>
-
-              <label class="calc-addon-card" data-addon="support">
-                <input type="checkbox" class="calc-addon-checkbox" id="addon-support" data-cost="650" data-days="0">
-                <div class="calc-addon-info">
-                  <div class="calc-addon-title">
-                    <span>60-Day SLA Support</span>
-                    <span class="calc-addon-price">+$650</span>
-                  </div>
-                  <div class="calc-addon-desc">Priority bug fixes &amp; continuous cloud monitor</div>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <!-- Step 4: Speed / Turnaround -->
-          <div class="calc-step">
-            <div class="calc-step-header">
-              <div class="calc-step-title">
-                <span class="calc-step-badge">4</span>
-                <span>Delivery Turnaround Pacing</span>
-              </div>
-              <span style="font-size: 0.8rem; color: var(--text-muted);">Speed Modifier</span>
-            </div>
-            <div class="calc-speed-options">
-              <div class="calc-speed-card active" data-speed="1.0" data-speed-label="Standard Pacing">
-                <span class="calc-speed-name">Standard</span>
-                <span class="calc-speed-sub">Normal Sprints (1.0x)</span>
-              </div>
-              <div class="calc-speed-card" data-speed="1.15" data-speed-label="Fast-Track (+15%)">
-                <span class="calc-speed-name">Fast-Track</span>
-                <span class="calc-speed-sub">20% Quicker (+15%)</span>
-              </div>
-              <div class="calc-speed-card" data-speed="1.30" data-speed-label="Express Sprint (+30%)">
-                <span class="calc-speed-name">Express Sprint</span>
-                <span class="calc-speed-sub">Rapid Delivery (+30%)</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Live Dynamic Estimate Results Box -->
-        <div class="calc-result-card">
-          <div class="calc-result-header">
-            <h3>Estimated Project Investment</h3>
-            <p>Real-time calculation based on your scope selections.</p>
-          </div>
-
-          <div class="calc-price-box">
-            <div class="calc-price-label">Estimated Total</div>
-            <div class="calc-total-number" id="calc-total-price">$1,499</div>
-            <div class="calc-timeline-est">
-              <i class="fas fa-clock"></i>
-              <span>Est. Turnaround: <strong id="calc-total-timeline">3 Weeks</strong></span>
-            </div>
-          </div>
-
-          <!-- Itemized Breakdown -->
-          <div class="calc-breakdown-list" id="calc-breakdown-list">
-            <!-- Dynamically populated via JS -->
-          </div>
-
-          <div class="calc-action-buttons">
-            <button class="btn btn-primary" id="calc-apply-btn" style="width: 100%;">
-              <span>Apply Quote to Booking Form</span>
-              <i class="fas fa-arrow-down"></i>
-            </button>
-            <button class="btn btn-secondary" id="calc-copy-btn" style="width: 100%;">
-              <span>Copy / Export Official Quote</span>
-              <i class="fas fa-copy"></i>
-            </button>
-          </div>
-
-          <div class="calc-guarantees">
-            <span><i class="fas fa-check-circle"></i> 100% Intellectual Property (IP) Ownership</span>
-            <span><i class="fas fa-check-circle"></i> Clean, Documented &amp; Tested Codebase</span>
-            <span><i class="fas fa-check-circle"></i> Milestone Escrow &amp; Transparent Invoicing</span>
-            <span><i class="fas fa-check-circle"></i> 14-Day Free Bug-Fix Warranty Post-Launch</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service Comparison Matrix Table -->
-      <div class="matrix-container">
-        <div style="padding: 1.5rem 1.75rem; border-bottom: 1px solid var(--border-subtle); background: var(--bg-secondary);">
-          <h3 style="font-size: 1.25rem; font-family: var(--font-heading); margin-bottom: 0.25rem;">Service Delivery Tiers Comparison</h3>
-          <p style="font-size: 0.85rem; color: var(--text-secondary);">Direct feature breakdown across our sprint models</p>
-        </div>
-        <table class="matrix-table">
+      <div class="guidelines-table-wrap">
+        <table class="guidelines-table">
           <thead>
             <tr>
-              <th>Deliverable / Feature</th>
-              <th>Starter MVP ($1,499)</th>
-              <th class="featured-col">Professional App ($3,499) ★</th>
-              <th>Enterprise Retainer ($5,999/mo)</th>
+              <th>Publishing Format</th>
+              <th>Target Scope</th>
+              <th>Recommended Limits</th>
+              <th>Typical Reading Cadence</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Custom Responsive Views</strong></td>
-              <td>3 - 5 Views</td>
-              <td class="featured-col">Up to 15 Views</td>
-              <td>Unlimited Sprints</td>
+              <td class="col-type">Academic Journal Abstract</td>
+              <td>Summary of research methodology and conclusions</td>
+              <td class="col-target">150 &ndash; 250 words</td>
+              <td>~ 1.0 min reading</td>
+              <td><button type="button" class="btn-apply-preset" data-target="200">Set 200w</button></td>
             </tr>
             <tr>
-              <td><strong>UI/UX Design in Figma</strong></td>
-              <td>Wireframes</td>
-              <td class="featured-col">Full Design System + Prototype</td>
-              <td>Dedicated Design Token Library</td>
+              <td class="col-type">Standard College Essay</td>
+              <td>Short argumentative essay or scholarship application</td>
+              <td class="col-target">500 &ndash; 750 words</td>
+              <td>~ 2.5 &ndash; 3.5 mins</td>
+              <td><button type="button" class="btn-apply-preset" data-target="500">Set 500w</button></td>
             </tr>
             <tr>
-              <td><strong>Full-Stack Backend &amp; DB</strong></td>
-              <td><span class="matrix-cross">✕</span> Simple Mock/Static</td>
-              <td class="featured-col"><span class="matrix-check">✓</span> Node.js / PostgreSQL / Prisma</td>
-              <td><span class="matrix-check">✓</span> Scalable Cloud Microservices</td>
+              <td class="col-type">Editorial Op-Ed / Blog Post</td>
+              <td>High-engagement commentary or newsletter issue</td>
+              <td class="col-target">800 &ndash; 1,200 words</td>
+              <td>~ 4.0 &ndash; 5.5 mins</td>
+              <td><button type="button" class="btn-apply-preset" data-target="1000">Set 1,000w</button></td>
             </tr>
             <tr>
-              <td><strong>User Authentication &amp; Roles</strong></td>
-              <td><span class="matrix-cross">✕</span> None</td>
-              <td class="featured-col"><span class="matrix-check">✓</span> JWT / OAuth / NextAuth</td>
-              <td><span class="matrix-check">✓</span> Enterprise SSO &amp; Multi-Tenant</td>
+              <td class="col-type">Keynote Speech / Lecture</td>
+              <td>15-minute conference address (130 WPM speech)</td>
+              <td class="col-target">1,800 &ndash; 2,000 words</td>
+              <td>~ 15.0 mins delivery</td>
+              <td><button type="button" class="btn-apply-preset" data-target="1950">Set 1,950w</button></td>
             </tr>
             <tr>
-              <td><strong>Payment &amp; Checkout System</strong></td>
-              <td><span class="matrix-cross">✕</span> None</td>
-              <td class="featured-col"><span class="matrix-check">✓</span> Stripe Checkout &amp; Webhooks</td>
-              <td><span class="matrix-check">✓</span> Multi-Currency &amp; Invoicing APIs</td>
+              <td class="col-type">In-Depth Whitepaper</td>
+              <td>Comprehensive technical treatise or case study</td>
+              <td class="col-target">2,500 &ndash; 4,000 words</td>
+              <td>~ 12.0 &ndash; 18.0 mins</td>
+              <td><button type="button" class="btn-apply-preset" data-target="3000">Set 3,000w</button></td>
             </tr>
             <tr>
-              <td><strong>Core Web Vitals Guarantee</strong></td>
-              <td>90+ Score</td>
-              <td class="featured-col">98+ Score Guarantee</td>
-              <td>99+ Score &amp; Edge CDN Tuning</td>
-            </tr>
-            <tr>
-              <td><strong>Code Reviews &amp; QA Testing</strong></td>
-              <td>Manual QA</td>
-              <td class="featured-col">Automated End-to-End Tests</td>
-              <td>Full CI/CD Pipeline &amp; Security Audits</td>
-            </tr>
-            <tr>
-              <td><strong>Dedicated Post-Launch SLA</strong></td>
-              <td>14 Days</td>
-              <td class="featured-col">30 Days Priority SLA</td>
-              <td>Continuous 24/7 Monitoring</td>
+              <td class="col-type">Fiction Novel Chapter</td>
+              <td>Single standard narrative pacing chapter</td>
+              <td class="col-target">3,000 &ndash; 5,000 words</td>
+              <td>~ 14.0 &ndash; 22.0 mins</td>
+              <td><button type="button" class="btn-apply-preset" data-target="4000">Set 4,000w</button></td>
             </tr>
           </tbody>
         </table>
@@ -837,100 +733,50 @@
     </div>
   </section>
 
-  <!-- ========================================================================
-       Skills & Tech Stack Section
-       ======================================================================== -->
-  <section id="skills" style="background: var(--bg-secondary);">
+  <!-- CLASSIC TESTIMONIALS & TRUST SECTION -->
+  <section class="trust-section">
     <div class="container">
-      <div class="skills-wrapper">
-        <!-- Left Side: Skills Introduction -->
-        <div class="skills-intro">
-          <span class="section-badge"><i class="fas fa-laptop-code"></i> Technical Arsenal</span>
-          <h2 class="section-title">Mastering the Tools that Power <span class="gradient-text">Modern Tech</span></h2>
-          <p>
-            We continually evolve with the rapidly moving software landscape to deliver clean, maintainable, and future-proof code across modern frameworks and cloud platforms.
+      <div class="section-head" style="margin-bottom: 36px;">
+        <span class="section-eyebrow">CRITICAL ENDORSEMENTS</span>
+        <h2 class="section-title">Praised by Writers, Editors &amp; Scholars</h2>
+      </div>
+
+      <div class="trust-quotes-grid">
+        <div class="quote-card">
+          <p class="quote-text">
+            &ldquo;The target word limit monitor alone saved me countless hours while preparing my fellowship thesis. The instant copy and clean Word manuscript download are unmatched in their simplicity.&rdquo;
           </p>
-
-          <div class="skill-pills-cloud">
-            <span class="skill-pill"><i class="fab fa-react" style="color: #61dafb;"></i> React.js</span>
-            <span class="skill-pill"><i class="fab fa-vuejs" style="color: #42b883;"></i> Vue.js 3</span>
-            <span class="skill-pill"><i class="fab fa-js-square" style="color: #f7df1e;"></i> TypeScript</span>
-            <span class="skill-pill"><i class="fab fa-node" style="color: #68a063;"></i> Node.js</span>
-            <span class="skill-pill"><i class="fab fa-python" style="color: #3776ab;"></i> Python / Django</span>
-            <span class="skill-pill"><i class="fas fa-database" style="color: #336791;"></i> PostgreSQL / Redis</span>
-            <span class="skill-pill"><i class="fab fa-docker" style="color: #2496ed;"></i> Docker</span>
-            <span class="skill-pill"><i class="fab fa-aws" style="color: #ff9900;"></i> AWS & Vercel</span>
-            <span class="skill-pill"><i class="fab fa-figma" style="color: #f24e1e;"></i> Figma</span>
-            <span class="skill-pill"><i class="fab fa-git-alt" style="color: #f05032;"></i> Git & CI/CD</span>
-            <span class="skill-pill"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML5 & Semantic Web</span>
-            <span class="skill-pill"><i class="fab fa-css3" style="color: #1572b6;"></i> Tailwind / CSS3</span>
+          <div class="quote-author">
+            <div class="author-avatar">EA</div>
+            <div>
+              <div class="author-name">Dr. Eleanor Ashcroft</div>
+              <div class="author-role">Fellow in Literature &bull; Oxford</div>
+            </div>
           </div>
-
-          <a href="#portfolio" class="btn btn-primary">
-            <span>Explore Projects Built With These</span>
-            <i class="fas fa-arrow-right"></i>
-          </a>
         </div>
 
-        <!-- Right Side: Animated Skill Progress Bars -->
-        <div class="skills-progress-container">
-          <div class="skill-bar-item">
-            <div class="skill-info">
-              <span>Frontend Architecture (React, Next.js, TypeScript)</span>
-              <span>96%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-width="96%"></div>
-            </div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-info">
-              <span>UI/UX Prototyping & Design Systems (Figma)</span>
-              <span>92%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-width="92%"></div>
+        <div class="quote-card">
+          <p class="quote-text">
+            &ldquo;In a world of bloated, ad-infested counter tools, Verbum feels like sitting at a polished mahogany desk with a fine pen. Complete privacy and zero data leakage make it our team's standard.&rdquo;
+          </p>
+          <div class="quote-author">
+            <div class="author-avatar">MR</div>
+            <div>
+              <div class="author-name">Marcus Sterling</div>
+              <div class="author-role">Managing Editor &bull; The Atlantic Review</div>
             </div>
           </div>
+        </div>
 
-          <div class="skill-bar-item">
-            <div class="skill-info">
-              <span>Backend & Microservices (Node, Python, APIs)</span>
-              <span>88%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-width="88%"></div>
-            </div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-info">
-              <span>Database Architecture (PostgreSQL, MongoDB, Redis)</span>
-              <span>85%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-width="85%"></div>
-            </div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-info">
-              <span>Performance Optimization & Core Web Vitals</span>
-              <span>98%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-width="98%"></div>
-            </div>
-          </div>
-
-          <div class="skill-bar-item">
-            <div class="skill-info">
-              <span>Cloud Infrastructure & CI/CD (AWS, Docker)</span>
-              <span>84%</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" data-width="84%"></div>
+        <div class="quote-card">
+          <p class="quote-text">
+            &ldquo;The speaking cadence profiler is dead-on accurate. When preparing keynote remarks, knowing my exact minutes at 130 WPM gives me total confidence on the podium.&rdquo;
+          </p>
+          <div class="quote-author">
+            <div class="author-avatar">SL</div>
+            <div>
+              <div class="author-name">Sarah Lin, M.Sc.</div>
+              <div class="author-role">Keynote Speaker &amp; Author</div>
             </div>
           </div>
         </div>
@@ -938,981 +784,146 @@
     </div>
   </section>
 
-  <!-- ========================================================================
-       Portfolio Projects Showcase Section
-       ======================================================================== -->
-  <section id="portfolio">
+  <!-- FREQUENTLY ASKED QUESTIONS (FAQ) -->
+  <section id="faq" class="faq-section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-badge"><i class="fas fa-folder-open"></i> Portfolio Showcase</span>
-        <h2 class="section-title">Selected Works & <span class="gradient-text">Success Stories</span></h2>
-        <p class="section-subtitle">
-          A showcase of recent digital products engineered with precision, exceptional UX, and measurable business growth.
-        </p>
+      <div class="section-head">
+        <span class="section-eyebrow">EDITORIAL INQUIRIES</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know about our privacy architecture, features, and zero-cost commitment.</p>
       </div>
 
-      <!-- Filter Buttons -->
-      <div class="portfolio-filters">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="Web Apps">Web Apps</button>
-        <button class="filter-btn" data-filter="UI/UX Design">UI/UX Design</button>
-        <button class="filter-btn" data-filter="E-Commerce">E-Commerce</button>
-        <button class="filter-btn" data-filter="Mobile">Mobile Apps</button>
-      </div>
-
-      <!-- Portfolio Grid -->
-      <div class="portfolio-grid">
-        <!-- Project 1 -->
-        <div class="project-card" data-category="Web Apps">
-          <div class="project-img-box">
-            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Fintech SaaS Analytics Platform" class="project-img">
-            <div class="project-overlay">
-              <a href="#" class="overlay-btn open-modal-btn" data-id="1" title="Quick Details"><i class="fas fa-eye"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-category">Web Apps</span>
-            <h3 class="project-title">Fintech Pro: SaaS Analytics Dashboard</h3>
-            <p class="project-desc">
-              Real-time financial analytics portal with predictive models, interactive data visualizers, and Stripe payouts integration.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">React</span>
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Node.js</span>
-            </div>
-            <div class="project-footer">
-              <button class="quick-view-btn open-modal-btn" data-id="1">
-                View Project Story <i class="fas fa-arrow-right"></i>
-              </button>
-              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-clock"></i> 6 Weeks</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card" data-category="E-Commerce">
-          <div class="project-img-box">
-            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Aura Luxe E-Commerce" class="project-img">
-            <div class="project-overlay">
-              <a href="#" class="overlay-btn open-modal-btn" data-id="2" title="Quick Details"><i class="fas fa-eye"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-category">E-Commerce</span>
-            <h3 class="project-title">Aura Luxe: High-Fashion Retailer</h3>
-            <p class="project-desc">
-              Headless luxury fashion store featuring interactive 3D product visualizers, instant algorithmic search, and 99/100 Core Web Vitals.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Next.js</span>
-              <span class="project-tag">Shopify API</span>
-              <span class="project-tag">Tailwind CSS</span>
-            </div>
-            <div class="project-footer">
-              <button class="quick-view-btn open-modal-btn" data-id="2">
-                View Project Story <i class="fas fa-arrow-right"></i>
-              </button>
-              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-clock"></i> 8 Weeks</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card" data-category="UI/UX Design">
-          <div class="project-img-box">
-            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Nova AI Studio UI" class="project-img">
-            <div class="project-overlay">
-              <a href="#" class="overlay-btn open-modal-btn" data-id="3" title="Quick Details"><i class="fas fa-eye"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-category">UI/UX Design</span>
-            <h3 class="project-title">Nova AI: Studio & Prompt Interface</h3>
-            <p class="project-desc">
-              Complete design system, token heatmaps, and modular canvas workflow crafted for enterprise machine learning teams.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Figma</span>
-              <span class="project-tag">UI/UX</span>
-              <span class="project-tag">Design System</span>
-            </div>
-            <div class="project-footer">
-              <button class="quick-view-btn open-modal-btn" data-id="3">
-                View Project Story <i class="fas fa-arrow-right"></i>
-              </button>
-              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-clock"></i> 5 Weeks</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-card" data-category="Mobile">
-          <div class="project-img-box">
-            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="PulseFit Wellness App" class="project-img">
-            <div class="project-overlay">
-              <a href="#" class="overlay-btn open-modal-btn" data-id="4" title="Quick Details"><i class="fas fa-eye"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-category">Mobile</span>
-            <h3 class="project-title">PulseFit: Wellness & Training App</h3>
-            <p class="project-desc">
-              Cross-platform fitness tracking app with real-time biometric sync, workout audio coaching, and social habit streaks.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">React Native</span>
-              <span class="project-tag">GraphQL</span>
-              <span class="project-tag">Firebase</span>
-            </div>
-            <div class="project-footer">
-              <button class="quick-view-btn open-modal-btn" data-id="4">
-                View Project Story <i class="fas fa-arrow-right"></i>
-              </button>
-              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-clock"></i> 10 Weeks</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="project-card" data-category="Web Apps">
-          <div class="project-img-box">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="StreamLine Workspace" class="project-img">
-            <div class="project-overlay">
-              <a href="#" class="overlay-btn open-modal-btn" data-id="5" title="Quick Details"><i class="fas fa-eye"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-category">Web Apps</span>
-            <h3 class="project-title">StreamLine: Collaborative Workspace</h3>
-            <p class="project-desc">
-              Distributed whiteboard and synchronous document editor with ultra-low latency WebSockets and end-to-end encryption.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Vue 3</span>
-              <span class="project-tag">WebSockets</span>
-              <span class="project-tag">Go Lang</span>
-            </div>
-            <div class="project-footer">
-              <button class="quick-view-btn open-modal-btn" data-id="5">
-                View Project Story <i class="fas fa-arrow-right"></i>
-              </button>
-              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-clock"></i> 7 Weeks</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 6 -->
-        <div class="project-card" data-category="E-Commerce">
-          <div class="project-img-box">
-            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" alt="EcoVibe Marketplace" class="project-img">
-            <div class="project-overlay">
-              <a href="#" class="overlay-btn open-modal-btn" data-id="6" title="Quick Details"><i class="fas fa-eye"></i></a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code"><i class="fab fa-github"></i></a>
-            </div>
-          </div>
-          <div class="project-content">
-            <span class="project-category">E-Commerce</span>
-            <h3 class="project-title">EcoVibe: Carbon Credit Portal</h3>
-            <p class="project-desc">
-              Eco-commerce platform facilitating carbon offset investments for corporations with automated ESG reporting and audit trails.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">TypeScript</span>
-              <span class="project-tag">Express</span>
-              <span class="project-tag">MongoDB</span>
-            </div>
-            <div class="project-footer">
-              <button class="quick-view-btn open-modal-btn" data-id="6">
-                View Project Story <i class="fas fa-arrow-right"></i>
-              </button>
-              <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="fas fa-clock"></i> 6 Weeks</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       Work Process / Workflow Section
-       ======================================================================== -->
-  <section id="process" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge"><i class="fas fa-diagram-project"></i> How We Work</span>
-        <h2 class="section-title">A Seamless, Transparent <span class="gradient-text">4-Step Delivery Process</span></h2>
-        <p class="section-subtitle">
-          Every project is handled with precision, continuous updates, and structured milestones from day one.
-        </p>
-      </div>
-
-      <div class="process-grid">
-        <!-- Step 1 -->
-        <div class="process-card">
-          <div class="process-step-num">01</div>
-          <h3>Discovery & Strategy</h3>
-          <p>
-            We define your product requirements, user personas, technical architecture, and project timeline to establish a rock-solid roadmap.
-          </p>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="process-card">
-          <div class="process-step-num">02</div>
-          <h3>UI/UX & Prototyping</h3>
-          <p>
-            Interactive prototypes, mood boards, and user journey wireframes are created in Figma for your feedback before code is written.
-          </p>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="process-card">
-          <div class="process-step-num">03</div>
-          <h3>Agile Development</h3>
-          <p>
-            Clean, modular code built in sprint iterations with continuous staging environments so you can see live progress in real-time.
-          </p>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="process-card">
-          <div class="process-step-num">04</div>
-          <h3>QA & Seamless Launch</h3>
-          <p>
-            Cross-browser testing, automated checks, SEO audits, and speed optimizations before orchestrating a smooth production release.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       Pricing / Hire Packages Section
-       ======================================================================== -->
-  <section id="pricing">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge"><i class="fas fa-tags"></i> Transparent Investment</span>
-        <h2 class="section-title">Flexible Packages Designed for <span class="gradient-text">Your Scale</span></h2>
-        <p class="section-subtitle">
-          No hidden fees or unexpected costs. Straightforward sprint packages and custom milestones.
-        </p>
-      </div>
-
-      <div class="pricing-grid">
-        <!-- Starter Package -->
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 class="pricing-tier">Starter MVP</h3>
-            <p class="pricing-description">Ideal for landing pages, MVPs, and early-stage founders looking to validate quickly.</p>
-          </div>
-          <div class="pricing-price">$1,499 <span>/ project</span></div>
-          <ul class="pricing-features-list">
-            <li><span class="feature-check">✓</span> 3-5 Custom Responsive Pages</li>
-            <li><span class="feature-check">✓</span> Modern UI/UX Design System</li>
-            <li><span class="feature-check">✓</span> Mobile-First Responsive Layout</li>
-            <li><span class="feature-check">✓</span> SEO & Core Web Vitals Tuned</li>
-            <li><span class="feature-check">✓</span> 14 Days Post-Launch Support</li>
-            <li class="disabled"><span>✕</span> Custom Backend & Database</li>
-            <li class="disabled"><span>✕</span> Payment Gateway Setup</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary">Get Started</a>
-        </div>
-
-        <!-- Professional Package (Featured) -->
-        <div class="pricing-card featured">
-          <span class="popular-ribbon">Most Popular</span>
-          <div class="pricing-header">
-            <h3 class="pricing-tier">Professional App</h3>
-            <p class="pricing-description">Full-featured web application or e-commerce solution built for rapid market growth.</p>
-          </div>
-          <div class="pricing-price">$3,499 <span>/ project</span></div>
-          <ul class="pricing-features-list">
-            <li><span class="feature-check">✓</span> Up to 12 Custom Responsive Views</li>
-            <li><span class="feature-check">✓</span> Full-Stack (React, Node, DB)</li>
-            <li><span class="feature-check">✓</span> User Auth & Role Management</li>
-            <li><span class="feature-check">✓</span> Payment Gateway (Stripe/PayPal)</li>
-            <li><span class="feature-check">✓</span> CMS or Admin Dashboard</li>
-            <li><span class="feature-check">✓</span> 30 Days Dedicated Support</li>
-            <li class="disabled"><span>✕</span> Native Mobile Application</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">Hire For Pro Project</a>
-        </div>
-
-        <!-- Enterprise / Dedicated Package -->
-        <div class="pricing-card">
-          <div class="pricing-header">
-            <h3 class="pricing-tier">Dedicated Partner</h3>
-            <p class="pricing-description">Full-time or monthly retainer for organizations requiring ongoing product innovation.</p>
-          </div>
-          <div class="pricing-price">$5,999 <span>/ month</span></div>
-          <ul class="pricing-features-list">
-            <li><span class="feature-check">✓</span> 40 Hours Dedicated Work / Week</li>
-            <li><span class="feature-check">✓</span> Priority Slack / Zoom Communication</li>
-            <li><span class="feature-check">✓</span> Full-Stack & Mobile Development</li>
-            <li><span class="feature-check">✓</span> DevOps, CI/CD & Cloud Infrastructure</li>
-            <li><span class="feature-check">✓</span> Continuous Code Reviews & Audits</li>
-            <li><span class="feature-check">✓</span> Immediate Emergency Support</li>
-            <li><span class="feature-check">✓</span> Flexible Sprint Cancellation</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary">Book Consultation</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       Frequently Asked Questions (FAQ) Section with Live Search & Highlight
-       ======================================================================== -->
-  <section id="faq">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge"><i class="fas fa-circle-question"></i> Client Inquiries</span>
-        <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
-        <p class="section-subtitle">
-          Everything you need to know about our sprint models, pricing milestones, code ownership, and post-launch guarantee.
-        </p>
-      </div>
-
-      <!-- FAQ Search Bar -->
-      <div class="faq-search-wrapper">
-        <i class="fas fa-search"></i>
-        <input type="text" id="faq-search-input" placeholder="Search questions (e.g. 'timeline', 'pricing', 'IP', 'warranty', 'tech')...">
-      </div>
-
-      <!-- FAQ Accordion List -->
-      <div class="faq-accordion-list" id="faq-list">
-        <!-- FAQ 1 -->
-        <div class="faq-item active" data-keywords="timeline duration turnaround delivery time sprint schedule">
-          <div class="faq-header">
-            <h3>What is your typical project delivery timeline?</h3>
-            <div class="faq-icon"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-body">
-            <p>
-              Landing pages and starter MVPs are typically delivered within <span class="marker-highlight highlight-yellow">1 to 2 weeks</span>. Full-scale SaaS web applications and headless e-commerce platforms take approximately <span class="marker-highlight highlight-cyan">4 to 8 weeks</span>, broken down into iterative agile sprints with live staging deployments every single Friday.
-            </p>
-          </div>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="faq-item" data-keywords="pricing payment escrow milestones invoicing cost budget">
-          <div class="faq-header">
-            <h3>How do pricing milestones and payments work?</h3>
-            <div class="faq-icon"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-body">
-            <p>
-              We operate on a transparent <span class="marker-highlight highlight-emerald">milestone-based payment schedule</span> (e.g., 30% upfront deposit, 40% upon staging milestone approval, and 30% upon final production launch). All payments are secured with formal invoices, contracts, and digital receipts.
-            </p>
-          </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item" data-keywords="code ownership intellectual property ip repository copyright git github">
-          <div class="faq-header">
-            <h3>Do I own 100% of the code and intellectual property?</h3>
-            <div class="faq-icon"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-body">
-            <p>
-              <span class="marker-highlight highlight-purple">Yes, absolutely 100%</span>. Upon final project sign-off and payment, all copyrights, GitHub repositories, Figma source files, database schemas, and intellectual property are completely transferred to your organization with zero ongoing licensing fees.
-            </p>
-          </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item" data-keywords="maintenance warranty support bug fixes post-launch sla guarantee">
-          <div class="faq-header">
-            <h3>What post-launch support and warranty are included?</h3>
-            <div class="faq-icon"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-body">
-            <p>
-              Every project comes with standard <span class="marker-highlight highlight-yellow">14 to 30 days of complimentary bug-fix warranty</span> and dedicated technical support. We also provide ongoing monthly retainer packages for continuous feature development, security patches, and cloud monitoring.
-            </p>
-          </div>
-        </div>
-
-        <!-- FAQ 5 -->
-        <div class="faq-item" data-keywords="communication slack zoom updates timezone reports meetings">
-          <div class="faq-header">
-            <h3>How do we communicate throughout the project?</h3>
-            <div class="faq-icon"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-body">
-            <p>
-              We establish a dedicated private <span class="marker-highlight highlight-cyan">Slack or Discord channel</span> with your team, alongside weekly Zoom / Google Meet check-ins. You receive video walkthroughs of completed features and 24/7 access to live staging environments.
-            </p>
-          </div>
-        </div>
-
-        <!-- FAQ 6 -->
-        <div class="faq-item" data-keywords="tech stack technologies react nextjs vue node python legacy migration database">
-          <div class="faq-header">
-            <h3>Can you work with our existing codebase or legacy systems?</h3>
-            <div class="faq-icon"><i class="fas fa-plus"></i></div>
-          </div>
-          <div class="faq-body">
-            <p>
-              Yes! We routinely audit, refactor, and integrate modern microservices into established systems, whether migrating from older monoliths to Next.js or connecting complex REST/GraphQL APIs with existing databases.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       Client Testimonials Section
-       ======================================================================== -->
-  <section id="testimonials" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge"><i class="fas fa-quote-left"></i> Verified Feedback</span>
-        <h2 class="section-title">What Clients Say About <span class="gradient-text">Freelancer Hub</span></h2>
-        <p class="section-subtitle">
-          Real reviews from startup founders, product managers, and business leaders worldwide.
-        </p>
-        <button class="btn btn-secondary" id="open-review-modal-btn" style="margin-top: 1.25rem;">
-          <i class="fas fa-pen-nib"></i>
-          <span>Write a Verified Review</span>
-        </button>
-      </div>
-
-      <div class="testimonials-slider-box">
-        <div class="testimonial-track-container">
-          <!-- Slide 1 -->
-          <div class="testimonial-slide active">
-            <div class="client-stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-quote">
-              "Working with Freelancer Hub was an absolute game-changer for our fintech SaaS launch. They delivered the complete dashboard ahead of schedule, with clean architecture and gorgeous animations that our beta testers raved about!"
-            </p>
-            <div class="testimonial-author-wrapper">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Sterling" class="author-avatar">
-              <div class="author-details">
-                <h4>Marcus Sterling</h4>
-                <p>Founder & CEO, Apex Fintech Solutions</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="testimonial-slide">
-            <div class="client-stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-quote">
-              "The attention to detail in the UI/UX design was unmatched. They transformed our clunky internal tool into a silky smooth, intuitive web app. Our team's daily productivity has surged by over 40%."
-            </p>
-            <div class="testimonial-author-wrapper">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="author-avatar">
-              <div class="author-details">
-                <h4>Elena Rostova</h4>
-                <p>VP of Product, StreamLine Labs</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="testimonial-slide">
-            <div class="client-stars">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p class="testimonial-quote">
-              "Outstanding technical capability and proactive communication throughout the entire engagement. They solved complex caching problems effortlessly and our site speed went from a D to an A grade!"
-            </p>
-            <div class="testimonial-author-wrapper">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="David Chen" class="author-avatar">
-              <div class="author-details">
-                <h4>David Chen</h4>
-                <p>Head of Engineering, Aura Studio</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slider Controls -->
-        <div class="slider-controls">
-          <button class="slider-btn" id="prev-testimonial" aria-label="Previous Testimonial">
-            <i class="fas fa-arrow-left"></i>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button type="button" class="faq-question">
+            <span>Is Verbum Atelier truly 100% free with no hidden charges?</span>
+            <span class="faq-chevron">&blacktriangledown;</span>
           </button>
-          <div class="slider-dots">
-            <span class="slider-dot active"></span>
-            <span class="slider-dot"></span>
-            <span class="slider-dot"></span>
+          <div class="faq-answer">
+            Yes. Verbum Atelier is completely free of charge. There are no subscriptions, no locked tiers, no credit cards, and no user registration required. Every tool, facility, metric, and export capability is fully accessible at zero cost.
           </div>
-          <button class="slider-btn" id="next-testimonial" aria-label="Next Testimonial">
-            <i class="fas fa-arrow-right"></i>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>Is my text stored or sent to any remote servers?</span>
+            <span class="faq-chevron">&blacktriangledown;</span>
           </button>
+          <div class="faq-answer">
+            No. Your text is processed strictly within your browser's local sandbox memory. We do not have any database, cloud storage, or external tracking for your text. When you clear or close your browser, your data is gone from active memory. It is fully safe for confidential manuscripts, legal contracts, and medical documentation.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>How does the Target Word Limit feature work?</span>
+            <span class="faq-chevron">&blacktriangledown;</span>
+          </button>
+          <div class="faq-answer">
+            You can set any custom numerical goal in the target word limit input or choose one of our quick presets (e.g. 50w, 150w, 500w, 1000w). The studio calculates real-time remaining words, shows a smooth animated progress bar, changes colors as you reach or exceed your limit, and provides audio chime feedback upon hitting your target.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>What document export formats are supported?</span>
+            <span class="faq-chevron">&blacktriangledown;</span>
+          </button>
+          <div class="faq-answer">
+            You can download your document in three digital formats: Plain Text (.txt), Word-compatible manuscript (.doc) with integrated editorial statistics, or Markdown (.md) with YAML frontmatter. You can also print or export directly to PDF via your system's print dialog.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question">
+            <span>What if I accidentally click the Clear button?</span>
+            <span class="faq-chevron">&blacktriangledown;</span>
+          </button>
+          <div class="faq-answer">
+            We engineered a fail-safe Undo system. Whenever you click 'Clear Text', an undo notification appears at the bottom right allowing you to restore your cleared manuscript with a single click.
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========================================================================
-       Contact & Inquiry Section
-       ======================================================================== -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-badge"><i class="fas fa-envelope-open-text"></i> Start A Conversation</span>
-        <h2 class="section-title">Ready to Bring Your <span class="gradient-text">Vision to Life?</span></h2>
-        <p class="section-subtitle">
-          Have an upcoming project, need an architectural consultation, or want to hire a dedicated developer? Send a message and let's get started.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <!-- Contact Left Information Card -->
-        <div class="contact-info-card">
-          <h3>Get In Touch Directly</h3>
-          <p>
-            We are always enthusiastic about collaborating on ambitious projects. Fill out the form or reach out through any of our channels below.
-          </p>
-
-          <div class="contact-detail-items">
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
-              <div class="contact-item-content">
-                <h5>Email Us</h5>
-                <a href="mailto:hello@freelancerhub.dev">hello@freelancerhub.dev</a>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
-              <div class="contact-item-content">
-                <h5>Phone / WhatsApp</h5>
-                <a href="tel:+18005550199">+1 (800) 555-0199</a>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="contact-item-content">
-                <h5>Location & Timezone</h5>
-                <span>Remote Worldwide (UTC -5 / EST & UTC +0)</span>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-bolt"></i></div>
-              <div class="contact-item-content">
-                <h5>Availability Status</h5>
-                <span style="color: var(--emerald-color); font-weight: 700;">● Accepting Q3 & Q4 Projects</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Social Profiles -->
-          <div class="contact-socials-wrapper">
-            <h5>Connect on Social Platforms</h5>
-            <div class="social-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Twitter / X"><i class="fab fa-x-twitter"></i></a>
-              <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Dribbble"><i class="fab fa-dribbble"></i></a>
-              <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-link" title="Discord"><i class="fab fa-discord"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Right Interactive Form -->
-        <div class="contact-form-card">
-          <form id="contact-form" novalidate>
-            <div class="form-group-row">
-              <div class="form-group">
-                <label for="contact-name" class="form-label">Your Full Name *</label>
-                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Sarah Jenkins" required>
-              </div>
-              <div class="form-group">
-                <label for="contact-email" class="form-label">Your Email Address *</label>
-                <input type="email" id="contact-email" class="form-input" placeholder="e.g. sarah@example.com" required>
-              </div>
-            </div>
-
-            <div class="form-group-row">
-              <div class="form-group">
-                <label for="contact-service" class="form-label">Service Required</label>
-                <select id="contact-service" class="form-select">
-                  <option value="web-dev">Full-Stack Web Development</option>
-                  <option value="ui-ux">UI/UX & Product Design</option>
-                  <option value="ecommerce">E-Commerce Development</option>
-                  <option value="mobile-dev">Mobile App Development</option>
-                  <option value="consultation">Technical Consultation / Audit</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="contact-budget" class="form-label">Estimated Budget</label>
-                <select id="contact-budget" class="form-select">
-                  <option value="1k-3k">$1,000 - $3,000</option>
-                  <option value="3k-7k">$3,000 - $7,000</option>
-                  <option value="7k-15k">$7,000 - $15,000</option>
-                  <option value="15k+">$15,000+</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-message" class="form-label">Project Details & Objectives *</label>
-              <textarea id="contact-message" class="form-textarea" placeholder="Tell us about your project goals, timelines, and technical requirements..." required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary" style="width: 100%;">
-              <span>Send Project Inquiry</span>
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========================================================================
-       Footer Section
-       ======================================================================== -->
-  <footer class="footer">
+  <!-- CLASSIC FOOTER -->
+  <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
-        <!-- Footer Brand Info -->
-        <div class="footer-col footer-brand">
-          <a href="#home" class="nav-brand">
-            <div class="brand-icon">
-              <i class="fas fa-cubes"></i>
-            </div>
-            <span>Freelancer<span class="brand-dot">Hub</span></span>
-          </a>
-          <p>
-            An elite showcase of full-stack engineering, modern interface craftsmanship, and scalable digital products for global businesses.
+        <div>
+          <div class="footer-brand-title">VERBUM ATELIER</div>
+          <p class="footer-manifesto">
+            A free, sovereign editorial text workbench engineered for scholars, novelists, and wordsmiths who honor the classical art of fine typography and precision prose.
           </p>
-        </div>
-
-        <!-- Quick Links -->
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#skills">Tech Stack</a>
-            <a href="#portfolio">Featured Work</a>
-            <a href="#pricing">Pricing Packages</a>
+          <div style="display:flex; gap:8px;">
+            <button class="btn-apply-preset" style="color:#ffffff; border-color:#334155; background:#1e293b;" onclick="window.scrollTo({top:0, behavior:'smooth'});">Back to Studio</button>
           </div>
         </div>
 
-        <!-- Services Links -->
-        <div class="footer-col">
-          <h4>Specialties</h4>
-          <div class="footer-links">
-            <a href="#services">Web Applications</a>
-            <a href="#services">UI/UX Systems</a>
-            <a href="#services">Headless Stores</a>
-            <a href="#services">Cloud Integrations</a>
-            <a href="#services">Performance Audits</a>
-          </div>
+        <div>
+          <div class="footer-col-title">Core Utilities</div>
+          <ul class="footer-nav-list">
+            <li><a href="#workbench" class="footer-nav-link">Word &amp; Character Counter</a></li>
+            <li><a href="#workbench" class="footer-nav-link">Target Limit Regulator</a></li>
+            <li><a href="#workbench" class="footer-nav-link">One-Click Clipboard Copy</a></li>
+            <li><a href="#workbench" class="footer-nav-link">Document Export (TXT/DOC)</a></li>
+            <li><a href="#workbench" class="footer-nav-link">Flesch Readability Scoring</a></li>
+          </ul>
         </div>
 
-        <!-- Newsletter Subscription -->
-        <div class="footer-col">
-          <h4>Stay Connected</h4>
-          <p style="color: var(--text-secondary); font-size: 0.9rem;">
-            Subscribe to receive periodic insights on modern web development and design architecture.
-          </p>
-          <form id="newsletter-form" class="newsletter-form">
-            <input type="email" class="newsletter-input" placeholder="Enter your email" required>
-            <button type="submit" class="btn btn-primary" style="padding: 0.7rem 1.25rem;">
-              <i class="fas fa-arrow-right"></i>
-            </button>
-          </form>
+        <div>
+          <div class="footer-col-title">Service Facilities</div>
+          <ul class="footer-nav-list">
+            <li><a href="#facilities" class="footer-nav-link">Client-Side Privacy Vault</a></li>
+            <li><a href="#facilities" class="footer-nav-link">AST Regex Tokenizer</a></li>
+            <li><a href="#facilities" class="footer-nav-link">Cadence &amp; Speech Timing</a></li>
+            <li><a href="#facilities" class="footer-nav-link">Case &amp; Typographic Suite</a></li>
+            <li><a href="#facilities" class="footer-nav-link">Session Memory &amp; Undo</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Keyboard Shortcuts</div>
+          <ul class="footer-nav-list" style="font-family:var(--font-mono); font-size:0.8rem; color:#94a3b8;">
+            <li><span style="color:#f8fafc;">Ctrl + Shift + C:</span> Instant Copy</li>
+            <li><span style="color:#f8fafc;">Ctrl + Shift + D:</span> Download .txt</li>
+            <li><span style="color:#f8fafc;">Ctrl + A, Backspace:</span> Clear (Undoable)</li>
+          </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Freelancer Hub. All rights reserved. Crafted with passion & precision.</p>
-        <div style="display: flex; gap: 1.5rem;">
-          <a href="#home">Privacy Policy</a>
-          <a href="#home">Terms of Service</a>
-          <a href="#contact">Get In Touch</a>
+        <div class="footer-bottom-copy">
+          <span>&copy; 2026 Verbum Classic Text Atelier.</span>
+          <span>Crafted with Classical Integrity &bull; Free &amp; Open Client Architecture.</span>
+        </div>
+        <div>
+          <span>100% Client-Side Sandboxed &bull; Zero Server Analytics</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- ========================================================================
-       Project Quick-View Modal Dialog
-       ======================================================================== -->
-  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-content">
-      <button class="modal-close-btn" id="modal-close" aria-label="Close Project Modal">&times;</button>
-      <div class="modal-img-container">
-        <img id="modal-image" src="" alt="Project Preview">
-      </div>
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-        <span id="modal-category" class="project-category" style="margin-bottom: 0;">Category</span>
-        <div style="font-size: 0.85rem; color: var(--text-muted);"><i class="fas fa-user-tie"></i> <span id="modal-client">Client</span></div>
-      </div>
-      <h2 id="modal-title" style="font-family: var(--font-heading); font-size: 1.75rem; margin-bottom: 1rem;">Project Title</h2>
-      <p id="modal-description" style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">Project details...</p>
-
-      <div style="margin-bottom: 1.5rem;">
-        <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.5rem;">Technologies Employed</h4>
-        <div id="modal-tags" class="project-tags"></div>
-      </div>
-
-      <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--border-subtle); padding-top: 1.25rem;">
-        <div style="font-size: 0.9rem; color: var(--text-secondary);">
-          <strong>Timeline:</strong> <span id="modal-timeline">N/A</span>
-        </div>
-        <div style="display: flex; gap: 0.75rem;">
-          <a id="modal-live-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-            <span>Live Preview</span>
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
+  <!-- FACILITY TECHNICAL SPECIFICATIONS MODAL -->
+  <div id="facilityModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close dialog">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div id="modalContentBox">
+        <!-- Injected dynamically by JS -->
       </div>
     </div>
   </div>
 
-  <!-- ========================================================================
-       Service Deliverables & Specs Modal Dialog
-       ======================================================================== -->
-  <div class="modal-backdrop" id="service-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-content" style="max-width: 650px;">
-      <button class="modal-close-btn" id="service-modal-close" aria-label="Close Service Modal">&times;</button>
-      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem;">
-        <div class="service-icon-wrapper" id="srv-modal-icon" style="margin-bottom: 0;">
-          <i class="fas fa-code"></i>
-        </div>
-        <div>
-          <span class="service-tag" id="srv-modal-category">Web Development</span>
-          <h2 id="srv-modal-title" style="font-family: var(--font-heading); font-size: 1.6rem; margin-top: 0.35rem;">Service Title</h2>
-        </div>
-      </div>
-      <p id="srv-modal-desc" style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Service description...</p>
+  <!-- FLOATING TOAST NOTIFICATION STACK -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
 
-      <h4 style="font-size: 0.9rem; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.75rem;">Deliverables Checklist</h4>
-      <div class="service-deliverables-checklist" id="srv-modal-checklist">
-        <!-- Dynamically injected -->
-      </div>
-
-      <div style="background: var(--bg-secondary); padding: 1.15rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); margin-bottom: 1.5rem; display: flex; justify-content: space-between; align-items: center;">
-        <div>
-          <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Typical Investment</div>
-          <div id="srv-modal-price" style="font-size: 1.35rem; font-weight: 800; color: var(--emerald-color);">From $1,499</div>
-        </div>
-        <div>
-          <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Standard SLA</div>
-          <div id="srv-modal-turnaround" style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary);">2 - 4 Weeks</div>
-        </div>
-      </div>
-
-      <div style="display: flex; gap: 0.75rem; justify-content: flex-end;">
-        <button class="btn btn-secondary" id="srv-modal-estimate-btn">
-          <span>Calculate Exact Scope</span>
-          <i class="fas fa-calculator"></i>
-        </button>
-        <button class="btn btn-primary" id="srv-modal-book-btn">
-          <span>Book This Service</span>
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================================
-       Booking Confirmation Voucher Modal Dialog
-       ======================================================================== -->
-  <div class="modal-backdrop" id="voucher-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-content" style="max-width: 600px;">
-      <button class="modal-close-btn" id="voucher-modal-close" aria-label="Close Voucher Modal">&times;</button>
-      <div class="voucher-card">
-        <div class="voucher-badge">
-          <i class="fas fa-check"></i>
-        </div>
-        <h2 style="font-family: var(--font-heading); font-size: 1.75rem; margin-bottom: 0.5rem;">Project Inquiry Confirmed!</h2>
-        <p style="color: var(--text-secondary); font-size: 0.9rem;">Your project ticket has been automatically logged and queued for architectural review.</p>
-        
-        <div class="voucher-ticket-id" id="voucher-id">#FH-2026-8941</div>
-
-        <div class="voucher-details-grid">
-          <div>
-            <div class="voucher-field-label">Client Name</div>
-            <div class="voucher-field-val" id="voucher-name">Sarah Jenkins</div>
-          </div>
-          <div>
-            <div class="voucher-field-label">Contact Email</div>
-            <div class="voucher-field-val" id="voucher-email">sarah@example.com</div>
-          </div>
-          <div>
-            <div class="voucher-field-label">Service Requested</div>
-            <div class="voucher-field-val" id="voucher-service">Full-Stack Web App</div>
-          </div>
-          <div>
-            <div class="voucher-field-label">Budget Tier</div>
-            <div class="voucher-field-val" id="voucher-budget">$3,000 - $7,000</div>
-          </div>
-          <div>
-            <div class="voucher-field-label">Submission Date</div>
-            <div class="voucher-field-val" id="voucher-date">Oct 09, 2026</div>
-          </div>
-          <div>
-            <div class="voucher-field-label">Guaranteed Response</div>
-            <div class="voucher-field-val" style="color: var(--emerald-color);">&lt; 15 Minutes SLA</div>
-          </div>
-        </div>
-
-        <div class="voucher-actions">
-          <button class="btn btn-primary" id="voucher-download-btn">
-            <i class="fas fa-download"></i>
-            <span>Download Voucher (TXT)</span>
-          </button>
-          <a id="voucher-whatsapp-btn" href="https://wa.me/18005550199" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-            <i class="fab fa-whatsapp" style="color: #25d366;"></i>
-            <span>Chat on WhatsApp</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- ========================================================================
-       Submit Review Modal Dialog
-       ======================================================================== -->
-  <div class="modal-backdrop" id="review-modal" role="dialog" aria-modal="true" aria-hidden="true">
-    <div class="modal-content" style="max-width: 520px;">
-      <button class="modal-close-btn" id="review-modal-close" aria-label="Close Review Modal">&times;</button>
-      <h2 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 0.5rem;">Submit Verified Review</h2>
-      <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1.5rem;">Share your experience working with Freelancer Hub.</p>
-
-      <form id="review-form">
-        <div class="form-group" style="margin-bottom: 1rem;">
-          <label class="form-label">Overall Rating</label>
-          <div class="star-picker" id="star-picker">
-            <i class="fas fa-star star-item selected" data-value="1"></i>
-            <i class="fas fa-star star-item selected" data-value="2"></i>
-            <i class="fas fa-star star-item selected" data-value="3"></i>
-            <i class="fas fa-star star-item selected" data-value="4"></i>
-            <i class="fas fa-star star-item selected" data-value="5"></i>
-          </div>
-        </div>
-
-        <div class="form-group" style="margin-bottom: 1rem;">
-          <label for="review-author" class="form-label">Your Name *</label>
-          <input type="text" id="review-author" class="form-input" placeholder="e.g. Rachel Adams" required>
-        </div>
-
-        <div class="form-group" style="margin-bottom: 1rem;">
-          <label for="review-role" class="form-label">Role &amp; Company *</label>
-          <input type="text" id="review-role" class="form-input" placeholder="e.g. Co-Founder, NextPeak Ventures" required>
-        </div>
-
-        <div class="form-group" style="margin-bottom: 1.5rem;">
-          <label for="review-text" class="form-label">Your Feedback *</label>
-          <textarea id="review-text" class="form-textarea" rows="4" placeholder="How did Freelancer Hub help your business achieve its goals?" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary" style="width: 100%;">
-          <span>Publish Verified Review</span>
-          <i class="fas fa-paper-plane"></i>
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <!-- ========================================================================
-       Automated Live AI Service Assistant ("NexusBot")
-       ======================================================================== -->
-  <div id="chatbot-widget">
-    <!-- Chat Launcher Button -->
-    <button id="chatbot-launcher" aria-label="Open AI Assistant" title="Chat with Nexus AI">
-      <i class="fas fa-robot"></i>
-      <span class="chat-unread-badge">1</span>
-    </button>
-
-    <!-- Chat Window -->
-    <div id="chatbot-window">
-      <!-- Chat Header -->
-      <div class="chat-header">
-        <div class="chat-bot-info">
-          <div class="chat-avatar">
-            <i class="fas fa-robot"></i>
-          </div>
-          <div class="chat-bot-details">
-            <h4>Nexus AI Assistant</h4>
-            <span class="chat-online-status">
-              <span class="pulse-dot" style="width: 6px; height: 6px;"></span>
-              Instant Auto-Response
-            </span>
-          </div>
-        </div>
-        <div class="chat-header-actions">
-          <button class="chat-btn-icon" id="chat-clear-btn" title="Clear Conversation"><i class="fas fa-trash-can"></i></button>
-          <button class="chat-btn-icon" id="chat-close-btn" title="Minimize Chat"><i class="fas fa-xmark"></i></button>
-        </div>
-      </div>
-
-      <!-- Messages Stream -->
-      <div class="chat-messages" id="chat-messages">
-        <!-- Initial Welcome Message -->
-        <div class="chat-msg bot">
-          👋 <strong>Welcome to Freelancer Hub!</strong> I am <strong>NexusBot</strong>, your automated technical advisor.
-          <br><br>
-          I can help you explore our services, estimate sprint budgets, or book a consultation with Alex Morgan immediately.
-          <span class="chat-timestamp">Just now</span>
-        </div>
-      </div>
-
-      <!-- Quick Suggestion Chips -->
-      <div class="chat-quick-chips">
-        <button class="quick-chip" data-query="services">💼 All Services</button>
-        <button class="quick-chip" data-query="calculator">💰 Quote Calculator</button>
-        <button class="quick-chip" data-query="turnaround">⚡ Turnaround Speed</button>
-        <button class="quick-chip" data-query="guarantees">🛡️ IP &amp; Warranty</button>
-        <button class="quick-chip" data-query="contact">📞 Book Consultation</button>
-      </div>
-
-      <!-- Typing Indicator -->
-      <div class="chat-typing" id="chat-typing">
-        <span class="typing-dot"></span>
-        <span class="typing-dot"></span>
-        <span class="typing-dot"></span>
-      </div>
-
-      <!-- Input Bar -->
-      <form class="chat-input-bar" id="chat-form">
-        <input type="text" id="chat-input" placeholder="Ask about services, pricing, stack..." autocomplete="off">
-        <button type="submit" class="chat-send-btn" aria-label="Send Message"><i class="fas fa-paper-plane"></i></button>
-      </form>
-    </div>
-  </div>
-
-  <!-- Floating Back to Top Button -->
-  <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- JavaScript Bundle -->
+  <!-- Main JavaScript File -->
   <script src="js/main.js"></script>
 </body>
 </html>
-
